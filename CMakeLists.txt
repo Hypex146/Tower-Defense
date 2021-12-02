@@ -3,12 +3,11 @@ project(Tower_Defense)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(MY_STRING_TEST lib/my-lib/string/MyString.cpp lib/my-lib/string/test_MyString.cpp)
-set(MY_STRING_MAIN lib/my-lib/string/MyString.cpp main.cpp)
 set(MY_STRING lib/my-lib/string/MyString.cpp)
+set(MY_STRING_TEST ${MY_STRING} lib/my-lib/string/test_MyString.cpp)
 
-set(CFG_TEST lib/my-lib/configurator/Configurator.cpp lib/my-lib/configurator/test_Configurator.cpp ${MY_STRING})
-set(CFG_MAIN lib/my-lib/configurator/Configurator.cpp main.cpp ${MY_STRING})
+set(CFG lib/my-lib/configurator/Configurator.cpp ${MY_STRING})
+set(CFG_TEST ${CFG} lib/my-lib/configurator/test_Configurator.cpp)
 
 set(LIST_TEST lib/my-lib/list/test_List.cpp)
 
@@ -21,7 +20,8 @@ set(TABLE_TEST lib/my-lib/table/test_Table.cpp)
 set(ENTITY entities/Entity.cpp)
 set(ENTITY_TEST entities/Entity.cpp entities/test_Entity.cpp)
 
-set(CASTLE entities/allied/Castle.cpp ${MY_STRING})
+set(CASTLE entities/allied/Castle.cpp ${MY_STRING} ${ENTITY})
+set(CASTLE_TEST ${CASTLE} entities/allied/test_Castle.cpp)
 
 set(MAIN main.cpp)
 
@@ -36,5 +36,5 @@ include_directories(entities/hostile)
 add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)
 
-add_executable(Tower_Defense ${CASTLE})
+add_executable(Tower_Defense ${CASTLE_TEST})
 target_link_libraries(Tower_Defense gtest gtest_main)

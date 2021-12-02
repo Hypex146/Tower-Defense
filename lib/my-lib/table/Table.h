@@ -109,6 +109,10 @@ public:
         return cells_[index]->info;
     }
 
+    int getCurrentSize() const{
+        return current_size_;
+    }
+
     void print() {
         for (int i = 0; i < current_size_; i++) {
             std::cout << cells_[i]->key << ": " << cells_[i]->info << std::endl;

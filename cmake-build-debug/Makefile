@@ -226,6 +226,30 @@ gtest/fast:
 	$(MAKE) $(MAKESILENT) -f lib/googletest-master/googletest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+entities/Entity.o: entities/Entity.cpp.o
+.PHONY : entities/Entity.o
+
+# target to build an object file
+entities/Entity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.o
+.PHONY : entities/Entity.cpp.o
+
+entities/Entity.i: entities/Entity.cpp.i
+.PHONY : entities/Entity.i
+
+# target to preprocess a source file
+entities/Entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.i
+.PHONY : entities/Entity.cpp.i
+
+entities/Entity.s: entities/Entity.cpp.s
+.PHONY : entities/Entity.s
+
+# target to generate assembly for a file
+entities/Entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.s
+.PHONY : entities/Entity.cpp.s
+
 entities/allied/Castle.o: entities/allied/Castle.cpp.o
 .PHONY : entities/allied/Castle.o
 
@@ -249,6 +273,30 @@ entities/allied/Castle.s: entities/allied/Castle.cpp.s
 entities/allied/Castle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.s
 .PHONY : entities/allied/Castle.cpp.s
+
+entities/allied/test_Castle.o: entities/allied/test_Castle.cpp.o
+.PHONY : entities/allied/test_Castle.o
+
+# target to build an object file
+entities/allied/test_Castle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.o
+.PHONY : entities/allied/test_Castle.cpp.o
+
+entities/allied/test_Castle.i: entities/allied/test_Castle.cpp.i
+.PHONY : entities/allied/test_Castle.i
+
+# target to preprocess a source file
+entities/allied/test_Castle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.i
+.PHONY : entities/allied/test_Castle.cpp.i
+
+entities/allied/test_Castle.s: entities/allied/test_Castle.cpp.s
+.PHONY : entities/allied/test_Castle.s
+
+# target to generate assembly for a file
+entities/allied/test_Castle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.s
+.PHONY : entities/allied/test_Castle.cpp.s
 
 lib/my-lib/string/MyString.o: lib/my-lib/string/MyString.cpp.o
 .PHONY : lib/my-lib/string/MyString.o
@@ -291,9 +339,15 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... entities/Entity.o"
+	@echo "... entities/Entity.i"
+	@echo "... entities/Entity.s"
 	@echo "... entities/allied/Castle.o"
 	@echo "... entities/allied/Castle.i"
 	@echo "... entities/allied/Castle.s"
+	@echo "... entities/allied/test_Castle.o"
+	@echo "... entities/allied/test_Castle.i"
+	@echo "... entities/allied/test_Castle.s"
 	@echo "... lib/my-lib/string/MyString.o"
 	@echo "... lib/my-lib/string/MyString.i"
 	@echo "... lib/my-lib/string/MyString.s"

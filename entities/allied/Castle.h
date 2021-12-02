@@ -12,6 +12,7 @@ struct Lvl_Specifications {
     double repair_speed_;
     double cost_;
 
+    Lvl_Specifications();
     Lvl_Specifications(double profitability, double max_HP, double repair_speed, double cost);
 };
 
@@ -19,8 +20,8 @@ class Castle : public Entity {
 private:
     MyString name_;
     int lvl_;
-    double current_HP_;
-    double current_gold_;
+    double HP_;
+    double gold_;
     Table<int, Lvl_Specifications> specifications_table_;
 public:
     Castle(Position position, const MyString &name, int lvl, double current_HP, double current_gold,
@@ -47,17 +48,29 @@ public:
 
     int getLvl() const;
 
-    double getCurrentHP() const;
+    double getHP() const;
 
-    double getCurrentGold() const;
+    double getGold() const;
 
-    Lvl_Specifications getLvlSpecByLvl(int lvl) const;
+    double getLvlCost(int lvl) const;
 
-    void setCurrentGold(double current_gold);
+    Lvl_Specifications getLvlSpec(int lvl) const;
 
-    void setCurrentHP(double current_HP);
+    void setGold(double current_gold);
+
+    void addGold(double gold);
+
+    void setHP(double current_HP);
 
     void setLvl(int lvl);
+
+    void lvlUp();
+
+    bool possibleUpLvl() const;
+
+    bool canUpLvl() const;
+
+    void takeDamage(double damage);
 
 };
 
