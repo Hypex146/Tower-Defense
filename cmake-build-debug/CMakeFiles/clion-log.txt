@@ -1,0 +1,4 @@
+C:\Windows\system32\wsl.exe --distribution Debian --exec /bin/sh -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug' && /home/vlad_/cmake-3.20.6/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G 'CodeBlocks - Unix Makefiles' '/mnt/f/programming/C++/labs_3_sem/Tower-Defense'"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug

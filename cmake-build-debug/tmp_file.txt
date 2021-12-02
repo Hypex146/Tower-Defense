@@ -1,0 +1,34 @@
+key1: "first"
+key2: "second"
+key3: 123456
+key4: 97854
+key5: -1254
+key6: qwerty
+key7: 7.1548
+key8: -0.45875
+key9:   "qwerty"
+key10: "  fjridkd"
+key11:   1545
+key12:  0.5
+key13: true
+key14: false
+key15:    true
+key16:
+key17:"string"
+key18: ""
+MyKey1: 777
+MyKey2: 123
+MyKey3: -54
+MyKey4: 1
+MyKey5: 5.25
+MyKey6: -125.2
+MyKey7: true
+MyKey8: false
+MyKey9: true
+MyKey10: "Hello!"
+MyKey11: "Hello, World!"
+MyKey12: ""
+MyKeyR0: 999
+MyKeyR1: -125.2
+MyKeyR2: false
+MyKeyR3: "Hello, World!"

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o -o Tower_Defense  lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a -lpthread 
