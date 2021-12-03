@@ -402,13 +402,13 @@
 		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/Entity.h">
 			<Option target="Tower_Defense"/>
 		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.cpp">
+		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Tower.cpp">
 			<Option target="Tower_Defense"/>
 		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.h">
+		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Tower.h">
 			<Option target="Tower_Defense"/>
 		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/test_Castle.cpp">
+		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/test_Tower.cpp">
 			<Option target="Tower_Defense"/>
 		</Unit>
 		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googlemock/src/gmock-all.cc">

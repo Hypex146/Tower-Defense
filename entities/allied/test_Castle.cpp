@@ -1,13 +1,13 @@
 #include "gtest/gtest.h"
 #include "Castle.h"
 
-void init(Position *position, Table<int, Lvl_Specifications> *specifications_table, int x, int y) {
-    Table<int, Lvl_Specifications> table;
-    Lvl_Specifications lvl1(1, 2, 3, 4);
+void init(Position *position, Table<int, LvlSpecificationsForCastle> *specifications_table, int x, int y) {
+    Table<int, LvlSpecificationsForCastle> table;
+    LvlSpecificationsForCastle lvl1(1, 2, 3, 4);
     table.put(1, lvl1);
-    Lvl_Specifications lvl2(5, 6, 7, 8);
+    LvlSpecificationsForCastle lvl2(5, 6, 7, 8);
     table.put(2, lvl2);
-    Lvl_Specifications lvl3(9, 10, 11, 12);
+    LvlSpecificationsForCastle lvl3(9, 10, 11, 12);
     table.put(3, lvl3);
     *specifications_table = table;
     *position = Position(x, y);
@@ -15,7 +15,7 @@ void init(Position *position, Table<int, Lvl_Specifications> *specifications_tab
 
 TEST(Constructors, PosFull_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(pos, MyString("MyCastle"), 1, 2, 3, spec_table);
     EXPECT_EQ(castle.getLvl(), 1);
@@ -31,7 +31,7 @@ TEST(Constructors, PosFull_0) {
 
 TEST(Constructors, XYFull_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(-1, -2, MyString("MyCastle"), 1, 2, 3, spec_table);
     EXPECT_EQ(castle.getLvl(), 1);
@@ -47,7 +47,7 @@ TEST(Constructors, XYFull_0) {
 
 TEST(Constructors, PosNotFull_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, -1, -2);
     Castle castle(pos, MyString("MyCastle"), 3, spec_table);
     EXPECT_EQ(castle.getLvl(), 1);
@@ -63,7 +63,7 @@ TEST(Constructors, PosNotFull_0) {
 
 TEST(Constructors, XYNotFull_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     EXPECT_EQ(castle.getLvl(), 1);
@@ -79,7 +79,7 @@ TEST(Constructors, XYNotFull_0) {
 
 TEST(Methods, GetLvlSpec_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     EXPECT_EQ(castle.getLvlSpec(2).cost_, 8);
@@ -90,7 +90,7 @@ TEST(Methods, GetLvlSpec_0) {
 
 TEST(Methods, SetGold_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     castle.setGold(500);
@@ -99,7 +99,7 @@ TEST(Methods, SetGold_0) {
 
 TEST(Methods, AddGold_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     castle.setGold(500);
@@ -110,19 +110,19 @@ TEST(Methods, AddGold_0) {
 
 TEST(Methods, SetHP_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     castle.setHP(1);
     EXPECT_EQ(castle.getHP(), 1);
     castle.setHP(-1);
-    EXPECT_EQ(castle.getHP(), -1);
+    EXPECT_EQ(castle.getHP(), 0);
     EXPECT_EQ(castle.isAlive(), false);
 }
 
 TEST(Methods, SetLvl_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     castle.setLvl(3);
@@ -131,7 +131,7 @@ TEST(Methods, SetLvl_0) {
 
 TEST(Methods, LvlUp_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     castle.setGold(100);
@@ -142,7 +142,7 @@ TEST(Methods, LvlUp_0) {
 
 TEST(Methods, PossibleUpLvl_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     EXPECT_EQ(castle.possibleUpLvl(), true);
@@ -150,7 +150,7 @@ TEST(Methods, PossibleUpLvl_0) {
 
 TEST(Methods, PossibleUpLvl_1) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     castle.setLvl(3);
@@ -159,7 +159,7 @@ TEST(Methods, PossibleUpLvl_1) {
 
 TEST(Methods, CanUpLvl_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     castle.setLvl(3);
@@ -169,7 +169,7 @@ TEST(Methods, CanUpLvl_0) {
 
 TEST(Methods, CanUpLvl_1) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     castle.setGold(0);
@@ -179,7 +179,7 @@ TEST(Methods, CanUpLvl_1) {
 
 TEST(Methods, CanUpLvl_2) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     castle.setLvl(2);
@@ -189,7 +189,7 @@ TEST(Methods, CanUpLvl_2) {
 
 TEST(Methods, TakeDamage_0) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     castle.takeDamage(1);
@@ -199,7 +199,7 @@ TEST(Methods, TakeDamage_0) {
 
 TEST(Methods, TakeDamage_1) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     castle.takeDamage(2);
@@ -209,10 +209,18 @@ TEST(Methods, TakeDamage_1) {
 
 TEST(Methods, TakeDamage_2) {
     Position pos(0, 0);
-    Table<int, Lvl_Specifications> spec_table;
+    Table<int, LvlSpecificationsForCastle> spec_table;
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     castle.takeDamage(3);
-    EXPECT_EQ(castle.getHP(), -1);
+    EXPECT_EQ(castle.getHP(), 0);
     EXPECT_EQ(castle.isAlive(), false);
+}
+
+TEST(Methods, GetName_0) {
+    Position pos(0, 0);
+    Table<int, LvlSpecificationsForCastle> spec_table;
+    init(&pos, &spec_table, 1, 2);
+    Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
+    EXPECT_EQ(castle.getName() == MyString("MyCastle"), true);
 }

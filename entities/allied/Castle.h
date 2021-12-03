@@ -6,14 +6,15 @@
 #include "Table.h"
 #include "MyString.h"
 
-struct Lvl_Specifications {
+struct LvlSpecificationsForCastle {
     double profitability_;
     double max_HP_;
     double repair_speed_;
     double cost_;
 
-    Lvl_Specifications();
-    Lvl_Specifications(double profitability, double max_HP, double repair_speed, double cost);
+    LvlSpecificationsForCastle();
+
+    LvlSpecificationsForCastle(double profitability, double max_HP, double repair_speed, double cost);
 };
 
 class Castle : public Entity {
@@ -22,19 +23,19 @@ private:
     int lvl_;
     double HP_;
     double gold_;
-    Table<int, Lvl_Specifications> specifications_table_;
+    Table<int, LvlSpecificationsForCastle> specifications_table_;
 public:
     Castle(Position position, const MyString &name, int lvl, double current_HP, double current_gold,
-           const Table<int, Lvl_Specifications> &specifications_table);
+           const Table<int, LvlSpecificationsForCastle> &specifications_table);
 
     Castle(int x, int y, const MyString &name, int lvl, double current_HP, double current_gold,
-           const Table<int, Lvl_Specifications> &specifications_table);
+           const Table<int, LvlSpecificationsForCastle> &specifications_table);
 
     Castle(Position position, const MyString &name, double current_gold,
-           const Table<int, Lvl_Specifications> &specifications_table);
+           const Table<int, LvlSpecificationsForCastle> &specifications_table);
 
     Castle(int x, int y, const MyString &name, double current_gold,
-           const Table<int, Lvl_Specifications> &specifications_table);
+           const Table<int, LvlSpecificationsForCastle> &specifications_table);
 
     ~Castle() override = default;
 
@@ -54,7 +55,7 @@ public:
 
     double getLvlCost(int lvl) const;
 
-    Lvl_Specifications getLvlSpec(int lvl) const;
+    LvlSpecificationsForCastle getLvlSpec(int lvl) const;
 
     void setGold(double current_gold);
 

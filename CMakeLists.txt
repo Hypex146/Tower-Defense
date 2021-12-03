@@ -23,6 +23,12 @@ set(ENTITY_TEST entities/Entity.cpp entities/test_Entity.cpp)
 set(CASTLE entities/allied/Castle.cpp ${MY_STRING} ${ENTITY})
 set(CASTLE_TEST ${CASTLE} entities/allied/test_Castle.cpp)
 
+set(WALL entities/allied/Wall.cpp ${MY_STRING} ${ENTITY})
+set(WALL_TEST ${WALL} entities/allied/test_Wall.cpp)
+
+set(TOWER entities/allied/Tower.cpp ${MY_STRING} ${ENTITY})
+set(TOWER_TEST ${TOWER} entities/allied/test_Tower.cpp)
+
 set(MAIN main.cpp)
 
 include_directories(lib/my-lib/string)
@@ -36,5 +42,5 @@ include_directories(entities/hostile)
 add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)
 
-add_executable(Tower_Defense ${CASTLE_TEST})
+add_executable(Tower_Defense ${TOWER_TEST})
 target_link_libraries(Tower_Defense gtest gtest_main)

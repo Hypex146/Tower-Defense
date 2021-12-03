@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.o"
-  "CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o"
-  "CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.o"
+  "CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o"
+  "CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.o"
   "CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o"
   "Tower_Defense"
   "Tower_Defense.pdb"

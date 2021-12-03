@@ -250,53 +250,53 @@ entities/Entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.s
 .PHONY : entities/Entity.cpp.s
 
-entities/allied/Castle.o: entities/allied/Castle.cpp.o
-.PHONY : entities/allied/Castle.o
+entities/allied/Tower.o: entities/allied/Tower.cpp.o
+.PHONY : entities/allied/Tower.o
 
 # target to build an object file
-entities/allied/Castle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o
-.PHONY : entities/allied/Castle.cpp.o
+entities/allied/Tower.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o
+.PHONY : entities/allied/Tower.cpp.o
 
-entities/allied/Castle.i: entities/allied/Castle.cpp.i
-.PHONY : entities/allied/Castle.i
+entities/allied/Tower.i: entities/allied/Tower.cpp.i
+.PHONY : entities/allied/Tower.i
 
 # target to preprocess a source file
-entities/allied/Castle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.i
-.PHONY : entities/allied/Castle.cpp.i
+entities/allied/Tower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.i
+.PHONY : entities/allied/Tower.cpp.i
 
-entities/allied/Castle.s: entities/allied/Castle.cpp.s
-.PHONY : entities/allied/Castle.s
+entities/allied/Tower.s: entities/allied/Tower.cpp.s
+.PHONY : entities/allied/Tower.s
 
 # target to generate assembly for a file
-entities/allied/Castle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.s
-.PHONY : entities/allied/Castle.cpp.s
+entities/allied/Tower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.s
+.PHONY : entities/allied/Tower.cpp.s
 
-entities/allied/test_Castle.o: entities/allied/test_Castle.cpp.o
-.PHONY : entities/allied/test_Castle.o
+entities/allied/test_Tower.o: entities/allied/test_Tower.cpp.o
+.PHONY : entities/allied/test_Tower.o
 
 # target to build an object file
-entities/allied/test_Castle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.o
-.PHONY : entities/allied/test_Castle.cpp.o
+entities/allied/test_Tower.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.o
+.PHONY : entities/allied/test_Tower.cpp.o
 
-entities/allied/test_Castle.i: entities/allied/test_Castle.cpp.i
-.PHONY : entities/allied/test_Castle.i
+entities/allied/test_Tower.i: entities/allied/test_Tower.cpp.i
+.PHONY : entities/allied/test_Tower.i
 
 # target to preprocess a source file
-entities/allied/test_Castle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.i
-.PHONY : entities/allied/test_Castle.cpp.i
+entities/allied/test_Tower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.i
+.PHONY : entities/allied/test_Tower.cpp.i
 
-entities/allied/test_Castle.s: entities/allied/test_Castle.cpp.s
-.PHONY : entities/allied/test_Castle.s
+entities/allied/test_Tower.s: entities/allied/test_Tower.cpp.s
+.PHONY : entities/allied/test_Tower.s
 
 # target to generate assembly for a file
-entities/allied/test_Castle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.s
-.PHONY : entities/allied/test_Castle.cpp.s
+entities/allied/test_Tower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.s
+.PHONY : entities/allied/test_Tower.cpp.s
 
 lib/my-lib/string/MyString.o: lib/my-lib/string/MyString.cpp.o
 .PHONY : lib/my-lib/string/MyString.o
@@ -342,12 +342,12 @@ help:
 	@echo "... entities/Entity.o"
 	@echo "... entities/Entity.i"
 	@echo "... entities/Entity.s"
-	@echo "... entities/allied/Castle.o"
-	@echo "... entities/allied/Castle.i"
-	@echo "... entities/allied/Castle.s"
-	@echo "... entities/allied/test_Castle.o"
-	@echo "... entities/allied/test_Castle.i"
-	@echo "... entities/allied/test_Castle.s"
+	@echo "... entities/allied/Tower.o"
+	@echo "... entities/allied/Tower.i"
+	@echo "... entities/allied/Tower.s"
+	@echo "... entities/allied/test_Tower.o"
+	@echo "... entities/allied/test_Tower.i"
+	@echo "... entities/allied/test_Tower.s"
 	@echo "... lib/my-lib/string/MyString.o"
 	@echo "... lib/my-lib/string/MyString.i"
 	@echo "... lib/my-lib/string/MyString.s"

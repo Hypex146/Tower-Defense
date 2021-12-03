@@ -66,18 +66,18 @@ include CMakeFiles/Tower_Defense.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Tower_Defense.dir/flags.make
 
-CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
-CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o: ../entities/allied/Castle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.cpp
+CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o: ../entities/allied/Tower.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Tower.cpp
 
-CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.cpp > CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.i
+CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Tower.cpp > CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.i
 
-CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.cpp -o CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.s
+CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Tower.cpp -o CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.s
 
 CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
 CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o: ../lib/my-lib/string/MyString.cpp
@@ -105,33 +105,33 @@ CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/Entity.cpp -o CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.s
 
-CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
-CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.o: ../entities/allied/test_Castle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/test_Castle.cpp
+CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.o: ../entities/allied/test_Tower.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/test_Tower.cpp
 
-CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/test_Castle.cpp > CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.i
+CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/test_Tower.cpp > CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.i
 
-CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/test_Castle.cpp -o CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.s
+CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/test_Tower.cpp -o CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.s
 
 # Object files for target Tower_Defense
 Tower_Defense_OBJECTS = \
-"CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o" \
 "CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o" \
 "CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.o" \
-"CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.o"
+"CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.o"
 
 # External object files for target Tower_Defense
 Tower_Defense_EXTERNAL_OBJECTS =
 
-Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o
 Tower_Defense: CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o
 Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.o
-Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/allied/test_Castle.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.o
 Tower_Defense: CMakeFiles/Tower_Defense.dir/build.make
 Tower_Defense: lib/libgtestd.a
 Tower_Defense: lib/libgtest_maind.a
