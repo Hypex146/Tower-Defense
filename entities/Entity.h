@@ -2,6 +2,7 @@
 #define TOWER_DEFENSE_ENTITY_H
 
 #include <iostream>
+#include "MyString.h"
 
 enum class EntityType {
     CASTLE,
@@ -28,10 +29,11 @@ private:
     Position position_;
     EntityType type_;
     bool is_alive_;
+    MyString name_;
 public:
-    explicit Entity(Position position, EntityType type);
+    explicit Entity(Position position, EntityType type, const MyString &name);
 
-    Entity(int x, int y, EntityType type);
+    Entity(int x, int y, EntityType type, const MyString &name);
 
     Entity(const Entity &obj) = default;
 
@@ -42,6 +44,8 @@ public:
     virtual EntityType getType() const;
 
     virtual Position getPos() const;
+
+    virtual MyString getName() const;
 
     virtual void setPos(Position position);
 

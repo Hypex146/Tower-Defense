@@ -31,6 +31,7 @@
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile"/>
+					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googlemock/include"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googlemock"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest/include"/>
@@ -64,6 +65,7 @@
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile"/>
+					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googlemock/include"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googlemock"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest/include"/>
@@ -97,6 +99,7 @@
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile"/>
+					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googlemock/include"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googlemock"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest/include"/>
@@ -130,6 +133,7 @@
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile"/>
+					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googlemock/include"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googlemock"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest/include"/>
@@ -163,6 +167,7 @@
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile"/>
+					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest/include"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/10"/>
@@ -194,6 +199,7 @@
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile"/>
+					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest/include"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/10"/>
@@ -225,6 +231,7 @@
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile"/>
+					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest/include"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/10"/>
@@ -256,6 +263,7 @@
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile"/>
+					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest/include"/>
 					<Add directory="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/10"/>

@@ -9,7 +9,7 @@
 struct LvlSpecificationsForCastle {
     double profitability_;
     double max_HP_;
-    double repair_speed_;
+    double repair_rate_;
     double cost_;
 
     LvlSpecificationsForCastle();
@@ -19,7 +19,6 @@ struct LvlSpecificationsForCastle {
 
 class Castle : public Entity {
 private:
-    MyString name_;
     int lvl_;
     double HP_;
     double gold_;
@@ -44,8 +43,6 @@ public:
     double getMaxHP() const;
 
     double getRepairSpeed() const;
-
-    MyString getName() const;
 
     int getLvl() const;
 
@@ -72,6 +69,8 @@ public:
     bool canUpLvl() const;
 
     void takeDamage(double damage);
+
+    void update() override;
 
 };
 

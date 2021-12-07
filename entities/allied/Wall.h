@@ -7,7 +7,6 @@
 
 class Wall : public Entity {
 private:
-    MyString name_;
     double HP_;
     double max_HP_;
 public:
@@ -21,8 +20,6 @@ public:
 
     ~Wall() override = default;
 
-    MyString getName() const;
-
     double getHP() const;
 
     double getMaxHP() const;
@@ -32,6 +29,8 @@ public:
     void takeDamage(double damage);
 
     void fix(double HP);
+
+    void update() override;
 
 };
 

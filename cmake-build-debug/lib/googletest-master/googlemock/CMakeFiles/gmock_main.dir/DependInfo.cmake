@@ -21,6 +21,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../entities"
   "../entities/allied"
   "../entities/hostile"
+  "../entities/hostile/enemies"
   "../lib/googletest-master/googlemock/include"
   "../lib/googletest-master/googlemock"
   "../lib/googletest-master/googletest/include"

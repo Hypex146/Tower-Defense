@@ -57,7 +57,7 @@ public:
         return *this;
     }
 
-    bool hasKey(int key) const {
+    bool hasKey(KeyType key) const {
         if (current_size_ == 0) { return false; }
         for (int i = 0; i < current_size_; i++) {
             if (cells_[i]->key == key) { return true; }
@@ -65,7 +65,7 @@ public:
         return false;
     }
 
-    void put(int key, InfoType info) {
+    void put(KeyType key, InfoType info) {
         if (hasKey(key)) { throw std::invalid_argument("This key already exists"); }
         auto **new_cells = new Cell<KeyType, InfoType> *[current_size_ + 1];
         for (int i = 0; i < current_size_; i++) { new_cells[i] = cells_[i]; }
@@ -78,7 +78,7 @@ public:
         cells_ = new_cells;
     }
 
-    void remove(int key) {
+    void remove(KeyType key) {
         if (!hasKey(key)) { throw std::invalid_argument("This key does not exist"); }
         auto **new_cells = new Cell<KeyType, InfoType> *[current_size_ - 1];
         int number_of_copied = 0;
@@ -95,7 +95,7 @@ public:
         cells_ = new_cells;
     }
 
-    InfoType getInfo(int key) const {
+    InfoType getInfo(KeyType key) const {
         for (int i = 0; i < current_size_; i++) {
             if (cells_[i]->key == key) { return cells_[i]->info; }
         }

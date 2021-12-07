@@ -7,29 +7,27 @@ LvlSpecificationsForTower::LvlSpecificationsForTower(double attack_radius, doubl
                                                                     fire_rate_(fire_rate), cost_(cost) {}
 
 Tower::Tower(Position position, const MyString &name, int lvl,
-             const Table<int, LvlSpecificationsForTower> &specifications_table) : Entity(position, EntityType::TOWER) {
-    name_ = name;
+             const Table<int, LvlSpecificationsForTower> &specifications_table) : Entity(position, EntityType::TOWER,
+                                                                                         name) {
     lvl_ = lvl;
     specifications_table_ = specifications_table;
 }
 
 Tower::Tower(int x, int y, const MyString &name, int lvl,
-             const Table<int, LvlSpecificationsForTower> &specifications_table) : Entity(x, y, EntityType::TOWER) {
-    name_ = name;
+             const Table<int, LvlSpecificationsForTower> &specifications_table) : Entity(x, y, EntityType::TOWER,
+                                                                                         name) {
     lvl_ = lvl;
     specifications_table_ = specifications_table;
 }
 
 Tower::Tower(Position position, const MyString &name, const Table<int,
-        LvlSpecificationsForTower> &specifications_table) : Entity(position, EntityType::TOWER) {
-    name_ = name;
+        LvlSpecificationsForTower> &specifications_table) : Entity(position, EntityType::TOWER, name) {
     lvl_ = 1;
     specifications_table_ = specifications_table;
 }
 
 Tower::Tower(int x, int y, const MyString &name, const Table<int, LvlSpecificationsForTower> &specifications_table)
-        : Entity(x, y, EntityType::TOWER) {
-    name_ = name;
+        : Entity(x, y, EntityType::TOWER, name) {
     lvl_ = 1;
     specifications_table_ = specifications_table;
 }
@@ -49,10 +47,6 @@ double Tower::getFireRate() const {
 double Tower::getLvlCost(int lvl) const {
     if (lvl > specifications_table_.getCurrentSize()) { throw std::invalid_argument("Exceeding the maximum level!"); }
     return specifications_table_.getInfoByIndex(lvl - 1).cost_;
-}
-
-MyString Tower::getName() const {
-    return name_;
 }
 
 int Tower::getLvl() const {
@@ -82,4 +76,6 @@ bool Tower::canUpLvl() const {
     return false; //TODO
 }
 
-
+void Tower::update() {
+    //TODO
+}

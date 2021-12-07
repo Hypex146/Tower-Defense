@@ -250,53 +250,77 @@ entities/Entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.s
 .PHONY : entities/Entity.cpp.s
 
-entities/allied/Tower.o: entities/allied/Tower.cpp.o
-.PHONY : entities/allied/Tower.o
+entities/hostile/Enemy.o: entities/hostile/Enemy.cpp.o
+.PHONY : entities/hostile/Enemy.o
 
 # target to build an object file
-entities/allied/Tower.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o
-.PHONY : entities/allied/Tower.cpp.o
+entities/hostile/Enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o
+.PHONY : entities/hostile/Enemy.cpp.o
 
-entities/allied/Tower.i: entities/allied/Tower.cpp.i
-.PHONY : entities/allied/Tower.i
+entities/hostile/Enemy.i: entities/hostile/Enemy.cpp.i
+.PHONY : entities/hostile/Enemy.i
 
 # target to preprocess a source file
-entities/allied/Tower.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.i
-.PHONY : entities/allied/Tower.cpp.i
+entities/hostile/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.i
+.PHONY : entities/hostile/Enemy.cpp.i
 
-entities/allied/Tower.s: entities/allied/Tower.cpp.s
-.PHONY : entities/allied/Tower.s
+entities/hostile/Enemy.s: entities/hostile/Enemy.cpp.s
+.PHONY : entities/hostile/Enemy.s
 
 # target to generate assembly for a file
-entities/allied/Tower.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.s
-.PHONY : entities/allied/Tower.cpp.s
+entities/hostile/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.s
+.PHONY : entities/hostile/Enemy.cpp.s
 
-entities/allied/test_Tower.o: entities/allied/test_Tower.cpp.o
-.PHONY : entities/allied/test_Tower.o
+entities/hostile/enemies/Aviation.o: entities/hostile/enemies/Aviation.cpp.o
+.PHONY : entities/hostile/enemies/Aviation.o
 
 # target to build an object file
-entities/allied/test_Tower.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.o
-.PHONY : entities/allied/test_Tower.cpp.o
+entities/hostile/enemies/Aviation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.o
+.PHONY : entities/hostile/enemies/Aviation.cpp.o
 
-entities/allied/test_Tower.i: entities/allied/test_Tower.cpp.i
-.PHONY : entities/allied/test_Tower.i
+entities/hostile/enemies/Aviation.i: entities/hostile/enemies/Aviation.cpp.i
+.PHONY : entities/hostile/enemies/Aviation.i
 
 # target to preprocess a source file
-entities/allied/test_Tower.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.i
-.PHONY : entities/allied/test_Tower.cpp.i
+entities/hostile/enemies/Aviation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.i
+.PHONY : entities/hostile/enemies/Aviation.cpp.i
 
-entities/allied/test_Tower.s: entities/allied/test_Tower.cpp.s
-.PHONY : entities/allied/test_Tower.s
+entities/hostile/enemies/Aviation.s: entities/hostile/enemies/Aviation.cpp.s
+.PHONY : entities/hostile/enemies/Aviation.s
 
 # target to generate assembly for a file
-entities/allied/test_Tower.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.s
-.PHONY : entities/allied/test_Tower.cpp.s
+entities/hostile/enemies/Aviation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.s
+.PHONY : entities/hostile/enemies/Aviation.cpp.s
+
+entities/hostile/enemies/test_Aviation.o: entities/hostile/enemies/test_Aviation.cpp.o
+.PHONY : entities/hostile/enemies/test_Aviation.o
+
+# target to build an object file
+entities/hostile/enemies/test_Aviation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_Aviation.cpp.o
+.PHONY : entities/hostile/enemies/test_Aviation.cpp.o
+
+entities/hostile/enemies/test_Aviation.i: entities/hostile/enemies/test_Aviation.cpp.i
+.PHONY : entities/hostile/enemies/test_Aviation.i
+
+# target to preprocess a source file
+entities/hostile/enemies/test_Aviation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_Aviation.cpp.i
+.PHONY : entities/hostile/enemies/test_Aviation.cpp.i
+
+entities/hostile/enemies/test_Aviation.s: entities/hostile/enemies/test_Aviation.cpp.s
+.PHONY : entities/hostile/enemies/test_Aviation.s
+
+# target to generate assembly for a file
+entities/hostile/enemies/test_Aviation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_Aviation.cpp.s
+.PHONY : entities/hostile/enemies/test_Aviation.cpp.s
 
 lib/my-lib/string/MyString.o: lib/my-lib/string/MyString.cpp.o
 .PHONY : lib/my-lib/string/MyString.o
@@ -342,12 +366,15 @@ help:
 	@echo "... entities/Entity.o"
 	@echo "... entities/Entity.i"
 	@echo "... entities/Entity.s"
-	@echo "... entities/allied/Tower.o"
-	@echo "... entities/allied/Tower.i"
-	@echo "... entities/allied/Tower.s"
-	@echo "... entities/allied/test_Tower.o"
-	@echo "... entities/allied/test_Tower.i"
-	@echo "... entities/allied/test_Tower.s"
+	@echo "... entities/hostile/Enemy.o"
+	@echo "... entities/hostile/Enemy.i"
+	@echo "... entities/hostile/Enemy.s"
+	@echo "... entities/hostile/enemies/Aviation.o"
+	@echo "... entities/hostile/enemies/Aviation.i"
+	@echo "... entities/hostile/enemies/Aviation.s"
+	@echo "... entities/hostile/enemies/test_Aviation.o"
+	@echo "... entities/hostile/enemies/test_Aviation.i"
+	@echo "... entities/hostile/enemies/test_Aviation.s"
 	@echo "... lib/my-lib/string/MyString.o"
 	@echo "... lib/my-lib/string/MyString.i"
 	@echo "... lib/my-lib/string/MyString.s"

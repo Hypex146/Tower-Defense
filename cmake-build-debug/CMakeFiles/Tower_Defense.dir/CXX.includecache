@@ -9,6 +9,16 @@
 ../entities/Entity.h
 iostream
 -
+MyString.h
+../entities/MyString.h
+
+../entities/hostile/Enemy.h
+iostream
+-
+Entity.h
+../entities/hostile/Entity.h
+MyString.h
+../entities/hostile/MyString.h
 
 ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
@@ -340,27 +350,51 @@ acxx_demangle.h
 iostream
 -
 
-../lib/my-lib/table/Table.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/Entity.cpp
+Entity.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/Entity.h
+
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/Entity.h
 iostream
 -
+MyString.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/MyString.h
 
-/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.cpp
-Castle.h
-/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.cpp
+Enemy.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.h
 
-/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.h
 iostream
 -
 Entity.h
-/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Entity.h
-Table.h
-/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Table.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Entity.h
 MyString.h
-/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/MyString.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/MyString.h
 
-/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/test_Castle.cpp
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.cpp
+Aviation.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.h
+
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.h
+iostream
+-
+Enemy.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Enemy.h
+MyString.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/MyString.h
+
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/test_Aviation.cpp
 gtest/gtest.h
-/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/gtest/gtest.h
-Castle.h
-/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/gtest/gtest.h
+Aviation.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.h
+
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/my-lib/string/MyString.cpp
+MyString.h
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/my-lib/string/MyString.h
+
+/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/my-lib/string/MyString.h
+iostream
+-
 

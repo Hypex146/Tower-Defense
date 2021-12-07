@@ -19,7 +19,6 @@ struct LvlSpecificationsForTower {
 
 class Tower : public Entity {
 private:
-    MyString name_;
     int lvl_;
     Table<int, LvlSpecificationsForTower> specifications_table_;
 public:
@@ -43,8 +42,6 @@ public:
 
     double getLvlCost(int lvl) const;
 
-    MyString getName() const;
-
     int getLvl() const;
 
     LvlSpecificationsForTower getLvlSpec(int lvl) const;
@@ -56,6 +53,8 @@ public:
     bool possibleUpLvl() const;
 
     bool canUpLvl() const;
+
+    void update() override;
 
 };
 

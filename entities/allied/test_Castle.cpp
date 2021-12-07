@@ -83,7 +83,7 @@ TEST(Methods, GetLvlSpec_0) {
     init(&pos, &spec_table, 1, 2);
     Castle castle(1, 2, MyString("MyCastle"), 3, spec_table);
     EXPECT_EQ(castle.getLvlSpec(2).cost_, 8);
-    EXPECT_EQ(castle.getLvlSpec(2).repair_speed_, 7);
+    EXPECT_EQ(castle.getLvlSpec(2).repair_rate_, 7);
     EXPECT_EQ(castle.getLvlSpec(2).max_HP_, 6);
     EXPECT_EQ(castle.getLvlSpec(2).profitability_, 5);
 }

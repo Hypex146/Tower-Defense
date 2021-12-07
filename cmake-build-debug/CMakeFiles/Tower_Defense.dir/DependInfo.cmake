@@ -9,8 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/Entity.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.o"
-  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Tower.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o"
-  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/test_Tower.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/allied/test_Tower.cpp.o"
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o"
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.o"
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/test_Aviation.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_Aviation.cpp.o"
   "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/my-lib/string/MyString.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -24,6 +25,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../entities"
   "../entities/allied"
   "../entities/hostile"
+  "../entities/hostile/enemies"
   "../lib/googletest-master/googletest/include"
   "../lib/googletest-master/googletest"
   )
