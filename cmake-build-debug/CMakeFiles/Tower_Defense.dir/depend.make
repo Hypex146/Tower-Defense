@@ -10,13 +10,20 @@ CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o: \
  ../lib/my-lib/string/MyString.h \
  ../entities/hostile/Enemy.cpp \
  ../entities/hostile/Enemy.h
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.o: \
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o: \
  ../entities/Entity.h \
  ../entities/hostile/Enemy.h \
  ../lib/my-lib/string/MyString.h \
- ../entities/hostile/enemies/Aviation.cpp \
- ../entities/hostile/enemies/Aviation.h
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_Aviation.cpp.o: \
+ ../entities/hostile/enemies/HeroLightInfantry.cpp \
+ ../entities/hostile/enemies/HeroLightInfantry.h \
+ ../entities/hostile/enemies/LightInfantry.h
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o: \
+ ../entities/Entity.h \
+ ../entities/hostile/Enemy.h \
+ ../lib/my-lib/string/MyString.h \
+ ../entities/hostile/enemies/LightInfantry.cpp \
+ ../entities/hostile/enemies/LightInfantry.h
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.o: \
  ../entities/Entity.h \
  ../entities/hostile/Enemy.h \
  ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h \
@@ -40,8 +47,9 @@ CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_Aviation.cpp.o: \
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h \
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h \
  ../lib/my-lib/string/MyString.h \
- ../entities/hostile/enemies/Aviation.h \
- ../entities/hostile/enemies/test_Aviation.cpp
+ ../entities/hostile/enemies/HeroLightInfantry.h \
+ ../entities/hostile/enemies/LightInfantry.h \
+ ../entities/hostile/enemies/test_HeroLightInfantry.cpp
 CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o: \
  ../lib/my-lib/string/MyString.cpp \
  ../lib/my-lib/string/MyString.h

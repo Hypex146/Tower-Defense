@@ -1,8 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.o"
   "CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o"
-  "CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.o"
-  "CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_Aviation.cpp.o"
+  "CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o"
+  "CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o"
+  "CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.o"
   "CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o"
   "Tower_Defense"
   "Tower_Defense.pdb"

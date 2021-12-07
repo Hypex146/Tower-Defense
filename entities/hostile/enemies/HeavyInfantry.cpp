@@ -49,3 +49,35 @@ void HeavyInfantry::setWallAttackRadius(double radius) {
 
 void HeavyInfantry::update() {
 }
+
+HeavyInfantry::HeavyInfantry(Position position, const MyString &name, double HP, double max_HP,
+                             double regeneration_rate, double speed, double damage_coefficient, double wall_damage,
+                             double wall_attack_radius, EntityType type)
+        : Enemy(position, name, type, HP, max_HP, regeneration_rate, speed, damage_coefficient) {
+    wall_damage_ = wall_damage;
+    wall_attack_radius_ = wall_attack_radius;
+}
+
+HeavyInfantry::HeavyInfantry(int x, int y, const MyString &name, double HP, double max_HP, double regeneration_rate,
+                             double speed, double damage_coefficient, double wall_damage, double wall_attack_radius,
+                             EntityType type)
+        : Enemy(x, y, name, type, HP, max_HP, regeneration_rate, speed, damage_coefficient) {
+    wall_damage_ = wall_damage;
+    wall_attack_radius_ = wall_attack_radius;
+}
+
+HeavyInfantry::HeavyInfantry(Position position, const MyString &name, double max_HP, double regeneration_rate,
+                             double speed, double damage_coefficient, double wall_damage, double wall_attack_radius,
+                             EntityType type)
+        : Enemy(position, name, type, max_HP, regeneration_rate, speed, damage_coefficient) {
+    wall_damage_ = wall_damage;
+    wall_attack_radius_ = wall_attack_radius;
+}
+
+HeavyInfantry::HeavyInfantry(int x, int y, const MyString &name, double max_HP, double regeneration_rate, double speed,
+                             double damage_coefficient, double wall_damage, double wall_attack_radius,
+                             EntityType type)
+        : Enemy(x, y, name, type, max_HP, regeneration_rate, speed, damage_coefficient) {
+    wall_damage_ = wall_damage;
+    wall_attack_radius_ = wall_attack_radius;
+}

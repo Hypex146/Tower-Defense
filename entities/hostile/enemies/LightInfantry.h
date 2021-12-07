@@ -12,6 +12,19 @@ private:
 
     bool dodged() const;
 
+protected:
+    LightInfantry(Position position, const MyString &name, double HP, double max_HP, double regeneration_rate,
+                  double speed, double damage_coefficient, double dodge_chance, EntityType type);
+
+    LightInfantry(int x, int y, const MyString &name, double HP, double max_HP, double regeneration_rate,
+                  double speed, double damage_coefficient, double dodge_chance, EntityType type);
+
+    LightInfantry(Position position, const MyString &name, double max_HP, double regeneration_rate,
+                  double speed, double damage_coefficient, double dodge_chance, EntityType type);
+
+    LightInfantry(int x, int y, const MyString &name, double max_HP, double regeneration_rate,
+                  double speed, double damage_coefficient, double dodge_chance, EntityType type);
+
 public:
     LightInfantry(Position position, const MyString &name, double HP, double max_HP,
                   double regeneration_rate, double speed, double damage_coefficient, double dodge_chance);

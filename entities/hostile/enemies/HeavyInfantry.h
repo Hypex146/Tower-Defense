@@ -9,6 +9,23 @@ class HeavyInfantry : public Enemy {
 private:
     double wall_damage_;
     double wall_attack_radius_;
+protected:
+    HeavyInfantry(Position position, const MyString &name, double HP, double max_HP, double regeneration_rate,
+                  double speed, double damage_coefficient, double wall_damage, double wall_attack_radius,
+                  EntityType type);
+
+    HeavyInfantry(int x, int y, const MyString &name, double HP, double max_HP, double regeneration_rate,
+                  double speed, double damage_coefficient, double wall_damage, double wall_attack_radius,
+                  EntityType type);
+
+    HeavyInfantry(Position position, const MyString &name, double max_HP, double regeneration_rate,
+                  double speed, double damage_coefficient, double wall_damage, double wall_attack_radius,
+                  EntityType type);
+
+    HeavyInfantry(int x, int y, const MyString &name, double max_HP, double regeneration_rate,
+                  double speed, double damage_coefficient, double wall_damage, double wall_attack_radius,
+                  EntityType type);
+
 public:
     HeavyInfantry(Position position, const MyString &name, double HP, double max_HP, double regeneration_rate,
                   double speed, double damage_coefficient, double wall_damage, double wall_attack_radius);

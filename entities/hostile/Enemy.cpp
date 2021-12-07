@@ -1,5 +1,14 @@
 #include "Enemy.h"
 
+BuffsAura::BuffsAura(double speed, double max_HP, double regeneration_rate, double damage_coefficient,
+                     double damage_resist) {
+    speed_ = speed;
+    max_HP_ = max_HP;
+    regeneration_rate_ = regeneration_rate;
+    damage_coefficient_ = damage_coefficient;
+    damage_resist_ = damage_resist;
+}
+
 Enemy::Enemy(Position position, const MyString &name, EntityType type, double HP, double max_HP,
              double regeneration_rate, double speed, double damage_coefficient) : Entity(position, type, name) {
     HP_ = HP;

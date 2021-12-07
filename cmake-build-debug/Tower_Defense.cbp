@@ -418,13 +418,19 @@
 		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.h">
 			<Option target="Tower_Defense"/>
 		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.cpp">
+		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroLightInfantry.cpp">
 			<Option target="Tower_Defense"/>
 		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.h">
+		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroLightInfantry.h">
 			<Option target="Tower_Defense"/>
 		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/test_Aviation.cpp">
+		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/LightInfantry.cpp">
+			<Option target="Tower_Defense"/>
+		</Unit>
+		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/LightInfantry.h">
+			<Option target="Tower_Defense"/>
+		</Unit>
+		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/test_HeroLightInfantry.cpp">
 			<Option target="Tower_Defense"/>
 		</Unit>
 		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googlemock/src/gmock-all.cc">

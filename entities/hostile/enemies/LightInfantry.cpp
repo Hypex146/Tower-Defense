@@ -49,4 +49,27 @@ void LightInfantry::takeDamage(double damage) {
 void LightInfantry::update() {
 }
 
+LightInfantry::LightInfantry(Position position, const MyString &name, double HP, double max_HP,
+                             double regeneration_rate, double speed, double damage_coefficient, double dodge_chance,
+                             EntityType type)
+        : Enemy(position, name, type, HP, max_HP, regeneration_rate, speed, damage_coefficient) {
+    dodge_chance_ = dodge_chance;
+}
 
+LightInfantry::LightInfantry(int x, int y, const MyString &name, double HP, double max_HP, double regeneration_rate,
+                             double speed, double damage_coefficient, double dodge_chance, EntityType type)
+        : Enemy(x, y, name, type, HP, max_HP, regeneration_rate, speed, damage_coefficient) {
+    dodge_chance_ = dodge_chance;
+}
+
+LightInfantry::LightInfantry(Position position, const MyString &name, double max_HP, double regeneration_rate,
+                             double speed, double damage_coefficient, double dodge_chance, EntityType type)
+        : Enemy(position, name, type, max_HP, regeneration_rate, speed, damage_coefficient) {
+    dodge_chance_ = dodge_chance;
+}
+
+LightInfantry::LightInfantry(int x, int y, const MyString &name, double max_HP, double regeneration_rate, double speed,
+                             double damage_coefficient, double dodge_chance, EntityType type)
+        : Enemy(x, y, name, type, max_HP, regeneration_rate, speed, damage_coefficient) {
+    dodge_chance_ = dodge_chance;
+}
