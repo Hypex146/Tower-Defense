@@ -53,9 +53,12 @@ set(HERO_HEAVY_INFANTRY_TEST ${HERO_HEAVY_INFANTRY} entities/hostile/enemies/tes
 set(HERO_AVIATION entities/hostile/enemies/HeroAviation.cpp ${AVIATION})
 set(HERO_AVIATION_TEST ${HERO_AVIATION} entities/hostile/enemies/test_HeroAviation.cpp)
 
-set(ALL_ENTITIES ${CASTLE} ${WALL} ${TOWER})
+set(ALL_ENTITIES ${CASTLE} ${WALL} ${TOWER} ${LAIR} ${ENEMY} ${LIGHT_INFANTRY} ${HEAVY_INFANTRY} ${AVIATION}
+        ${HERO_LIGHT_INFANTRY} ${HERO_HEAVY_INFANTRY} ${HERO_AVIATION})
 
 set(ENTITIES_MANAGER entities/EntitiesManager.cpp ${ALL_ENTITIES})
+
+set(TOWER_DEFENSE TowerDefense.cpp ${ENTITIES_MANAGER})
 
 set(MAIN main.cpp)
 
@@ -71,5 +74,5 @@ include_directories(entities/hostile/enemies)
 add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)
 
-add_executable(Tower_Defense ${HERO_LIGHT_INFANTRY_TEST})
+add_executable(Tower_Defense ${TOWER_DEFENSE})
 target_link_libraries(Tower_Defense gtest gtest_main)

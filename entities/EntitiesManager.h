@@ -7,16 +7,25 @@
 
 class EntitiesManager {
 private:
-    Castle *castle_;
+    Castle *castle_ = nullptr;
     List<Entity *> entities_;
+
+    bool matchesFilter(const Entity &entity, const List<EntityType> &filter);
+
 public:
     EntitiesManager() = default;
 
-    EntitiesManager(Castle *castle);
+    explicit EntitiesManager(Castle *castle);
 
-    List<Entity *> getNearby(Position center, double radius);
+    List<Entity *>
+    getNearbyEntities(Position center, double radius, const List<EntityType> &filter = List<EntityType>());
 
-    List<Entity *> getNearby(const Entity &center, double radius);
+    List<Entity *>
+    getNearbyEntities(const Entity &center, double radius, const List<EntityType> &filter = List<EntityType>());
+
+    Entity *getNearbyEntity(Position center, const List<EntityType> &filter = List<EntityType>());
+
+    Entity *getNearbyEntity(const Entity &center, const List<EntityType> &filter = List<EntityType>());
 
     Castle *getCastle();
 

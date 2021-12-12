@@ -22,3 +22,15 @@ void Entity::setPos(int x, int y) { setPos(Position(x, y)); }
 EntityType Entity::getType() const { return type_; }
 
 MyString Entity::getName() const { return name_; }
+
+double Entity::getDistance(Position position) {
+    int dx = 0, dy = 0;
+    dx = position_.x_ - position.x_;
+    dy = position_.y_ - position.y_;
+    double distance = sqrt(pow(dx, 2) + pow(dy, 2));
+    return distance;
+}
+
+double Entity::getDistance(const Entity &entity) {
+    return getDistance(entity.position_);
+}

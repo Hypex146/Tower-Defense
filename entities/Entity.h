@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "MyString.h"
+#include <math.h>
 
 enum class EntityType {
     CASTLE,
@@ -56,6 +57,10 @@ public:
     virtual bool isAlive() const;
 
     virtual void kill();
+
+    virtual double getDistance(Position position);
+
+    virtual double getDistance(const Entity &entity);
 
 };
 

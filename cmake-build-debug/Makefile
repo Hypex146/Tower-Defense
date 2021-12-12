@@ -226,6 +226,54 @@ gtest/fast:
 	$(MAKE) $(MAKESILENT) -f lib/googletest-master/googletest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+TowerDefense.o: TowerDefense.cpp.o
+.PHONY : TowerDefense.o
+
+# target to build an object file
+TowerDefense.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.o
+.PHONY : TowerDefense.cpp.o
+
+TowerDefense.i: TowerDefense.cpp.i
+.PHONY : TowerDefense.i
+
+# target to preprocess a source file
+TowerDefense.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.i
+.PHONY : TowerDefense.cpp.i
+
+TowerDefense.s: TowerDefense.cpp.s
+.PHONY : TowerDefense.s
+
+# target to generate assembly for a file
+TowerDefense.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.s
+.PHONY : TowerDefense.cpp.s
+
+entities/EntitiesManager.o: entities/EntitiesManager.cpp.o
+.PHONY : entities/EntitiesManager.o
+
+# target to build an object file
+entities/EntitiesManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.o
+.PHONY : entities/EntitiesManager.cpp.o
+
+entities/EntitiesManager.i: entities/EntitiesManager.cpp.i
+.PHONY : entities/EntitiesManager.i
+
+# target to preprocess a source file
+entities/EntitiesManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.i
+.PHONY : entities/EntitiesManager.cpp.i
+
+entities/EntitiesManager.s: entities/EntitiesManager.cpp.s
+.PHONY : entities/EntitiesManager.s
+
+# target to generate assembly for a file
+entities/EntitiesManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.s
+.PHONY : entities/EntitiesManager.cpp.s
+
 entities/Entity.o: entities/Entity.cpp.o
 .PHONY : entities/Entity.o
 
@@ -250,6 +298,78 @@ entities/Entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.s
 .PHONY : entities/Entity.cpp.s
 
+entities/allied/Castle.o: entities/allied/Castle.cpp.o
+.PHONY : entities/allied/Castle.o
+
+# target to build an object file
+entities/allied/Castle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o
+.PHONY : entities/allied/Castle.cpp.o
+
+entities/allied/Castle.i: entities/allied/Castle.cpp.i
+.PHONY : entities/allied/Castle.i
+
+# target to preprocess a source file
+entities/allied/Castle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.i
+.PHONY : entities/allied/Castle.cpp.i
+
+entities/allied/Castle.s: entities/allied/Castle.cpp.s
+.PHONY : entities/allied/Castle.s
+
+# target to generate assembly for a file
+entities/allied/Castle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.s
+.PHONY : entities/allied/Castle.cpp.s
+
+entities/allied/Tower.o: entities/allied/Tower.cpp.o
+.PHONY : entities/allied/Tower.o
+
+# target to build an object file
+entities/allied/Tower.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o
+.PHONY : entities/allied/Tower.cpp.o
+
+entities/allied/Tower.i: entities/allied/Tower.cpp.i
+.PHONY : entities/allied/Tower.i
+
+# target to preprocess a source file
+entities/allied/Tower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.i
+.PHONY : entities/allied/Tower.cpp.i
+
+entities/allied/Tower.s: entities/allied/Tower.cpp.s
+.PHONY : entities/allied/Tower.s
+
+# target to generate assembly for a file
+entities/allied/Tower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.s
+.PHONY : entities/allied/Tower.cpp.s
+
+entities/allied/Wall.o: entities/allied/Wall.cpp.o
+.PHONY : entities/allied/Wall.o
+
+# target to build an object file
+entities/allied/Wall.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.o
+.PHONY : entities/allied/Wall.cpp.o
+
+entities/allied/Wall.i: entities/allied/Wall.cpp.i
+.PHONY : entities/allied/Wall.i
+
+# target to preprocess a source file
+entities/allied/Wall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.i
+.PHONY : entities/allied/Wall.cpp.i
+
+entities/allied/Wall.s: entities/allied/Wall.cpp.s
+.PHONY : entities/allied/Wall.s
+
+# target to generate assembly for a file
+entities/allied/Wall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.s
+.PHONY : entities/allied/Wall.cpp.s
+
 entities/hostile/Enemy.o: entities/hostile/Enemy.cpp.o
 .PHONY : entities/hostile/Enemy.o
 
@@ -273,6 +393,126 @@ entities/hostile/Enemy.s: entities/hostile/Enemy.cpp.s
 entities/hostile/Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.s
 .PHONY : entities/hostile/Enemy.cpp.s
+
+entities/hostile/Lair.o: entities/hostile/Lair.cpp.o
+.PHONY : entities/hostile/Lair.o
+
+# target to build an object file
+entities/hostile/Lair.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.o
+.PHONY : entities/hostile/Lair.cpp.o
+
+entities/hostile/Lair.i: entities/hostile/Lair.cpp.i
+.PHONY : entities/hostile/Lair.i
+
+# target to preprocess a source file
+entities/hostile/Lair.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.i
+.PHONY : entities/hostile/Lair.cpp.i
+
+entities/hostile/Lair.s: entities/hostile/Lair.cpp.s
+.PHONY : entities/hostile/Lair.s
+
+# target to generate assembly for a file
+entities/hostile/Lair.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.s
+.PHONY : entities/hostile/Lair.cpp.s
+
+entities/hostile/enemies/Aviation.o: entities/hostile/enemies/Aviation.cpp.o
+.PHONY : entities/hostile/enemies/Aviation.o
+
+# target to build an object file
+entities/hostile/enemies/Aviation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.o
+.PHONY : entities/hostile/enemies/Aviation.cpp.o
+
+entities/hostile/enemies/Aviation.i: entities/hostile/enemies/Aviation.cpp.i
+.PHONY : entities/hostile/enemies/Aviation.i
+
+# target to preprocess a source file
+entities/hostile/enemies/Aviation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.i
+.PHONY : entities/hostile/enemies/Aviation.cpp.i
+
+entities/hostile/enemies/Aviation.s: entities/hostile/enemies/Aviation.cpp.s
+.PHONY : entities/hostile/enemies/Aviation.s
+
+# target to generate assembly for a file
+entities/hostile/enemies/Aviation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.s
+.PHONY : entities/hostile/enemies/Aviation.cpp.s
+
+entities/hostile/enemies/HeavyInfantry.o: entities/hostile/enemies/HeavyInfantry.cpp.o
+.PHONY : entities/hostile/enemies/HeavyInfantry.o
+
+# target to build an object file
+entities/hostile/enemies/HeavyInfantry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.o
+.PHONY : entities/hostile/enemies/HeavyInfantry.cpp.o
+
+entities/hostile/enemies/HeavyInfantry.i: entities/hostile/enemies/HeavyInfantry.cpp.i
+.PHONY : entities/hostile/enemies/HeavyInfantry.i
+
+# target to preprocess a source file
+entities/hostile/enemies/HeavyInfantry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.i
+.PHONY : entities/hostile/enemies/HeavyInfantry.cpp.i
+
+entities/hostile/enemies/HeavyInfantry.s: entities/hostile/enemies/HeavyInfantry.cpp.s
+.PHONY : entities/hostile/enemies/HeavyInfantry.s
+
+# target to generate assembly for a file
+entities/hostile/enemies/HeavyInfantry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.s
+.PHONY : entities/hostile/enemies/HeavyInfantry.cpp.s
+
+entities/hostile/enemies/HeroAviation.o: entities/hostile/enemies/HeroAviation.cpp.o
+.PHONY : entities/hostile/enemies/HeroAviation.o
+
+# target to build an object file
+entities/hostile/enemies/HeroAviation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.o
+.PHONY : entities/hostile/enemies/HeroAviation.cpp.o
+
+entities/hostile/enemies/HeroAviation.i: entities/hostile/enemies/HeroAviation.cpp.i
+.PHONY : entities/hostile/enemies/HeroAviation.i
+
+# target to preprocess a source file
+entities/hostile/enemies/HeroAviation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.i
+.PHONY : entities/hostile/enemies/HeroAviation.cpp.i
+
+entities/hostile/enemies/HeroAviation.s: entities/hostile/enemies/HeroAviation.cpp.s
+.PHONY : entities/hostile/enemies/HeroAviation.s
+
+# target to generate assembly for a file
+entities/hostile/enemies/HeroAviation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.s
+.PHONY : entities/hostile/enemies/HeroAviation.cpp.s
+
+entities/hostile/enemies/HeroHeavyInfantry.o: entities/hostile/enemies/HeroHeavyInfantry.cpp.o
+.PHONY : entities/hostile/enemies/HeroHeavyInfantry.o
+
+# target to build an object file
+entities/hostile/enemies/HeroHeavyInfantry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.o
+.PHONY : entities/hostile/enemies/HeroHeavyInfantry.cpp.o
+
+entities/hostile/enemies/HeroHeavyInfantry.i: entities/hostile/enemies/HeroHeavyInfantry.cpp.i
+.PHONY : entities/hostile/enemies/HeroHeavyInfantry.i
+
+# target to preprocess a source file
+entities/hostile/enemies/HeroHeavyInfantry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.i
+.PHONY : entities/hostile/enemies/HeroHeavyInfantry.cpp.i
+
+entities/hostile/enemies/HeroHeavyInfantry.s: entities/hostile/enemies/HeroHeavyInfantry.cpp.s
+.PHONY : entities/hostile/enemies/HeroHeavyInfantry.s
+
+# target to generate assembly for a file
+entities/hostile/enemies/HeroHeavyInfantry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.s
+.PHONY : entities/hostile/enemies/HeroHeavyInfantry.cpp.s
 
 entities/hostile/enemies/HeroLightInfantry.o: entities/hostile/enemies/HeroLightInfantry.cpp.o
 .PHONY : entities/hostile/enemies/HeroLightInfantry.o
@@ -322,30 +562,6 @@ entities/hostile/enemies/LightInfantry.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.s
 .PHONY : entities/hostile/enemies/LightInfantry.cpp.s
 
-entities/hostile/enemies/test_HeroLightInfantry.o: entities/hostile/enemies/test_HeroLightInfantry.cpp.o
-.PHONY : entities/hostile/enemies/test_HeroLightInfantry.o
-
-# target to build an object file
-entities/hostile/enemies/test_HeroLightInfantry.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.o
-.PHONY : entities/hostile/enemies/test_HeroLightInfantry.cpp.o
-
-entities/hostile/enemies/test_HeroLightInfantry.i: entities/hostile/enemies/test_HeroLightInfantry.cpp.i
-.PHONY : entities/hostile/enemies/test_HeroLightInfantry.i
-
-# target to preprocess a source file
-entities/hostile/enemies/test_HeroLightInfantry.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.i
-.PHONY : entities/hostile/enemies/test_HeroLightInfantry.cpp.i
-
-entities/hostile/enemies/test_HeroLightInfantry.s: entities/hostile/enemies/test_HeroLightInfantry.cpp.s
-.PHONY : entities/hostile/enemies/test_HeroLightInfantry.s
-
-# target to generate assembly for a file
-entities/hostile/enemies/test_HeroLightInfantry.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tower_Defense.dir/build.make CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.s
-.PHONY : entities/hostile/enemies/test_HeroLightInfantry.cpp.s
-
 lib/my-lib/string/MyString.o: lib/my-lib/string/MyString.cpp.o
 .PHONY : lib/my-lib/string/MyString.o
 
@@ -387,21 +603,48 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... TowerDefense.o"
+	@echo "... TowerDefense.i"
+	@echo "... TowerDefense.s"
+	@echo "... entities/EntitiesManager.o"
+	@echo "... entities/EntitiesManager.i"
+	@echo "... entities/EntitiesManager.s"
 	@echo "... entities/Entity.o"
 	@echo "... entities/Entity.i"
 	@echo "... entities/Entity.s"
+	@echo "... entities/allied/Castle.o"
+	@echo "... entities/allied/Castle.i"
+	@echo "... entities/allied/Castle.s"
+	@echo "... entities/allied/Tower.o"
+	@echo "... entities/allied/Tower.i"
+	@echo "... entities/allied/Tower.s"
+	@echo "... entities/allied/Wall.o"
+	@echo "... entities/allied/Wall.i"
+	@echo "... entities/allied/Wall.s"
 	@echo "... entities/hostile/Enemy.o"
 	@echo "... entities/hostile/Enemy.i"
 	@echo "... entities/hostile/Enemy.s"
+	@echo "... entities/hostile/Lair.o"
+	@echo "... entities/hostile/Lair.i"
+	@echo "... entities/hostile/Lair.s"
+	@echo "... entities/hostile/enemies/Aviation.o"
+	@echo "... entities/hostile/enemies/Aviation.i"
+	@echo "... entities/hostile/enemies/Aviation.s"
+	@echo "... entities/hostile/enemies/HeavyInfantry.o"
+	@echo "... entities/hostile/enemies/HeavyInfantry.i"
+	@echo "... entities/hostile/enemies/HeavyInfantry.s"
+	@echo "... entities/hostile/enemies/HeroAviation.o"
+	@echo "... entities/hostile/enemies/HeroAviation.i"
+	@echo "... entities/hostile/enemies/HeroAviation.s"
+	@echo "... entities/hostile/enemies/HeroHeavyInfantry.o"
+	@echo "... entities/hostile/enemies/HeroHeavyInfantry.i"
+	@echo "... entities/hostile/enemies/HeroHeavyInfantry.s"
 	@echo "... entities/hostile/enemies/HeroLightInfantry.o"
 	@echo "... entities/hostile/enemies/HeroLightInfantry.i"
 	@echo "... entities/hostile/enemies/HeroLightInfantry.s"
 	@echo "... entities/hostile/enemies/LightInfantry.o"
 	@echo "... entities/hostile/enemies/LightInfantry.i"
 	@echo "... entities/hostile/enemies/LightInfantry.s"
-	@echo "... entities/hostile/enemies/test_HeroLightInfantry.o"
-	@echo "... entities/hostile/enemies/test_HeroLightInfantry.i"
-	@echo "... entities/hostile/enemies/test_HeroLightInfantry.s"
 	@echo "... lib/my-lib/string/MyString.o"
 	@echo "... lib/my-lib/string/MyString.i"
 	@echo "... lib/my-lib/string/MyString.s"

@@ -7,6 +7,7 @@ class TowerDefense {
 private:
     EntitiesManager *entities_manager_;
 public:
+    const EntitiesManager *getEntitiesManagerPtr();
 
 };
 

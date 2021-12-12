@@ -66,44 +66,44 @@ include CMakeFiles/Tower_Defense.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Tower_Defense.dir/flags.make
 
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o: ../entities/hostile/enemies/HeroLightInfantry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroLightInfantry.cpp
+CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.o: ../TowerDefense.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/TowerDefense.cpp
 
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroLightInfantry.cpp > CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.i
+CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/TowerDefense.cpp > CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.i
 
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroLightInfantry.cpp -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.s
+CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/TowerDefense.cpp -o CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.s
 
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o: ../entities/hostile/enemies/LightInfantry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/LightInfantry.cpp
+CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.o: ../entities/EntitiesManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/EntitiesManager.cpp
 
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/LightInfantry.cpp > CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.i
+CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/EntitiesManager.cpp > CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.i
 
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/LightInfantry.cpp -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.s
+CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/EntitiesManager.cpp -o CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.s
 
-CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
-CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o: ../entities/hostile/Enemy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.cpp
+CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o: ../entities/allied/Castle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.cpp
 
-CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.cpp > CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.i
+CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.cpp > CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.i
 
-CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.cpp -o CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.s
+CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.cpp -o CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.s
 
 CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
 CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o: ../lib/my-lib/string/MyString.cpp
@@ -131,43 +131,178 @@ CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/Entity.cpp -o CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.s
 
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.o: ../entities/hostile/enemies/test_HeroLightInfantry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/test_HeroLightInfantry.cpp
+CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.o: ../entities/allied/Wall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Wall.cpp
 
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/test_HeroLightInfantry.cpp > CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.i
+CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Wall.cpp > CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.i
 
-CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/test_HeroLightInfantry.cpp -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.s
+CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Wall.cpp -o CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.s
+
+CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o: ../entities/allied/Tower.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Tower.cpp
+
+CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Tower.cpp > CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.i
+
+CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Tower.cpp -o CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.s
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.o: ../entities/hostile/Lair.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Lair.cpp
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Lair.cpp > CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.i
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Lair.cpp -o CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.s
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o: ../entities/hostile/Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.cpp
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.cpp > CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.i
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.cpp -o CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.s
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o: ../entities/hostile/enemies/LightInfantry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/LightInfantry.cpp
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/LightInfantry.cpp > CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.i
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/LightInfantry.cpp -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.s
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.o: ../entities/hostile/enemies/HeavyInfantry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeavyInfantry.cpp
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeavyInfantry.cpp > CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.i
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeavyInfantry.cpp -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.s
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.o: ../entities/hostile/enemies/Aviation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.cpp
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.cpp > CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.i
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.cpp -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.s
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o: ../entities/hostile/enemies/HeroLightInfantry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroLightInfantry.cpp
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroLightInfantry.cpp > CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.i
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroLightInfantry.cpp -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.s
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.o: ../entities/hostile/enemies/HeroHeavyInfantry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroHeavyInfantry.cpp
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroHeavyInfantry.cpp > CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.i
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroHeavyInfantry.cpp -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.s
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.o: CMakeFiles/Tower_Defense.dir/flags.make
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.o: ../entities/hostile/enemies/HeroAviation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroAviation.cpp
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroAviation.cpp > CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.i
+
+CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroAviation.cpp -o CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.s
 
 # Object files for target Tower_Defense
 Tower_Defense_OBJECTS = \
-"CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o" \
-"CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o" \
-"CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o" \
 "CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o" \
 "CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.o" \
-"CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.o"
+"CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.o" \
+"CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.o"
 
 # External object files for target Tower_Defense
 Tower_Defense_EXTERNAL_OBJECTS =
 
-Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o
-Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o
-Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o
 Tower_Defense: CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o
 Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.o
-Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.o
+Tower_Defense: CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.o
 Tower_Defense: CMakeFiles/Tower_Defense.dir/build.make
 Tower_Defense: lib/libgtestd.a
 Tower_Defense: lib/libgtest_maind.a
 Tower_Defense: lib/libgtestd.a
 Tower_Defense: CMakeFiles/Tower_Defense.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Tower_Defense"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Tower_Defense"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Tower_Defense.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

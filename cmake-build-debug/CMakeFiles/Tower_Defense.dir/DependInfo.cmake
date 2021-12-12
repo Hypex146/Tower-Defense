@@ -8,11 +8,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/TowerDefense.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/TowerDefense.cpp.o"
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/EntitiesManager.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/EntitiesManager.cpp.o"
   "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/Entity.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/Entity.cpp.o"
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/allied/Castle.cpp.o"
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Tower.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/allied/Tower.cpp.o"
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Wall.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/allied/Wall.cpp.o"
   "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/hostile/Enemy.cpp.o"
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Lair.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/hostile/Lair.cpp.o"
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/Aviation.cpp.o"
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeavyInfantry.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeavyInfantry.cpp.o"
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroAviation.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroAviation.cpp.o"
+  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroHeavyInfantry.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroHeavyInfantry.cpp.o"
   "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroLightInfantry.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/HeroLightInfantry.cpp.o"
   "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/LightInfantry.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/LightInfantry.cpp.o"
-  "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/test_HeroLightInfantry.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/entities/hostile/enemies/test_HeroLightInfantry.cpp.o"
   "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/my-lib/string/MyString.cpp" "/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/Tower_Defense.dir/lib/my-lib/string/MyString.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
