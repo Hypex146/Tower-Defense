@@ -406,90 +406,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/TowerDefense.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/TowerDefense.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/EntitiesManager.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/EntitiesManager.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/Entity.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/Entity.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Castle.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Tower.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Tower.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Wall.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/allied/Wall.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Enemy.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Lair.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/Lair.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/Aviation.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeavyInfantry.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeavyInfantry.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroAviation.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroAviation.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroHeavyInfantry.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroHeavyInfantry.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroLightInfantry.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/HeroLightInfantry.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/LightInfantry.cpp">
-			<Option target="Tower_Defense"/>
-		</Unit>
-		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/entities/hostile/enemies/LightInfantry.h">
-			<Option target="Tower_Defense"/>
-		</Unit>
 		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googlemock/src/gmock-all.cc">
 			<Option target="gmock"/>
 		</Unit>
@@ -502,10 +418,19 @@
 		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/googletest-master/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
+		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/my-lib/configurator/Configurator.cpp">
+			<Option target="Tower_Defense"/>
+		</Unit>
+		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/my-lib/configurator/Configurator.h">
+			<Option target="Tower_Defense"/>
+		</Unit>
 		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/my-lib/string/MyString.cpp">
 			<Option target="Tower_Defense"/>
 		</Unit>
 		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/lib/my-lib/string/MyString.h">
+			<Option target="Tower_Defense"/>
+		</Unit>
+		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/main.cpp">
 			<Option target="Tower_Defense"/>
 		</Unit>
 		<Unit filename="/mnt/f/programming/C++/labs_3_sem/Tower-Defense/CMakeLists.txt">

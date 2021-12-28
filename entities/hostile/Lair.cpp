@@ -11,6 +11,6 @@ Lair::Lair(int x, int y, const MyString &name, const Table<EntityType, int> &ene
 }
 
 void Lair::update() {
-}
+} //TODO
 
 

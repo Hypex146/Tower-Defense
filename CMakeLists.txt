@@ -60,6 +60,8 @@ set(ENTITIES_MANAGER entities/EntitiesManager.cpp ${ALL_ENTITIES})
 
 set(TOWER_DEFENSE TowerDefense.cpp ${ENTITIES_MANAGER})
 
+set(GAME_MAP GameMap.cpp)
+
 set(MAIN main.cpp)
 
 include_directories(lib/my-lib/string)
@@ -74,5 +76,5 @@ include_directories(entities/hostile/enemies)
 add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)
 
-add_executable(Tower_Defense ${TOWER_DEFENSE})
+add_executable(Tower_Defense ${MAIN} ${MY_STRING} ${CFG})
 target_link_libraries(Tower_Defense gtest gtest_main)

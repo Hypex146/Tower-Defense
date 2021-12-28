@@ -47,7 +47,7 @@ public:
 
     void setWallAttackRadius(double radius);
 
-    void update() override;
+    void update() override; //TODO
 
 };
 

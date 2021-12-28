@@ -16,9 +16,9 @@ public:
 
     ~Lair() override = default;
 
-    void forcedSpawnEnemy(EntityType enemy);
+    void forcedSpawnEnemy(EntityType enemy); //TODO
 
-    void spawnEnemyIfNeed();
+    void spawnEnemyIfNeed(); //TODO
 
     void update() override;
 

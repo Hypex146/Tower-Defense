@@ -18,7 +18,7 @@ struct LvlSpecificationsForCastle {
 };
 
 class Castle : public Entity {
-private:
+protected:
     int lvl_;
     double HP_;
     double gold_;

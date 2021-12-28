@@ -43,7 +43,7 @@ public:
 
     void setAmmunition(int ammunition);
 
-    void update() override;
+    void update() override; //TODO
 
 };
 

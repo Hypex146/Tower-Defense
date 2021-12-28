@@ -10,7 +10,7 @@ private:
     Castle *castle_ = nullptr;
     List<Entity *> entities_;
 
-    bool matchesFilter(const Entity &entity, const List<EntityType> &filter);
+    bool matchesFilter(const Entity &entity, const List<EntityType> &filter) const;
 
 public:
     EntitiesManager() = default;
@@ -29,9 +29,9 @@ public:
 
     Castle *getCastle();
 
-    void registerEntity(Entity *entity);
+    void registerEntity(Entity *entity); //TODO
 
-    void removeDead();
+    void removeDead(); //TODO
 
 };
 

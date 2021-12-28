@@ -44,7 +44,7 @@ public:
 
     void takeDamage(double damage) override;
 
-    void update() override;
+    void update() override; //TODO
 
 };
 

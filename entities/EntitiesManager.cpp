@@ -4,7 +4,7 @@ EntitiesManager::EntitiesManager(Castle *castle) {
     castle_ = castle;
 }
 
-bool EntitiesManager::matchesFilter(const Entity &entity, const List<EntityType> &filter) {
+bool EntitiesManager::matchesFilter(const Entity &entity, const List<EntityType> &filter) const {
     if (filter.getLen() == 0) { return true; }
     if (filter.getValueIndex(entity.getType()) != -1) { return true; }
     return false;

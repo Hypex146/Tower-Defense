@@ -26,7 +26,7 @@ struct Position {
 };
 
 class Entity {
-private:
+protected:
     Position position_;
     EntityType type_;
     bool is_alive_;
