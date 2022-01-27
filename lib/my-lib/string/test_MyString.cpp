@@ -792,3 +792,43 @@ TEST(Methods, Cut_1) {
     MyString str("Hello, World!");
     EXPECT_THROW(str.cut(6, 5), std::invalid_argument);
 }
+
+TEST(Methods, Split_0) {
+    MyString str("One two Three");
+    int count_words;
+    MyString *words = str.splitIntoWords(count_words);
+    for (int i = 0; i < count_words; i++) { std::cout << words[i] << std::endl; }
+    delete[] words;
+}
+
+TEST(Methods, Split_1) {
+    MyString str("   One    two Three    ");
+    int count_words;
+    MyString *words = str.splitIntoWords(count_words);
+    for (int i = 0; i < count_words; i++) { std::cout << words[i] << std::endl; }
+    delete[] words;
+}
+
+TEST(Methods, Split_2) {
+    MyString str("");
+    int count_words;
+    MyString *words = str.splitIntoWords(count_words);
+    for (int i = 0; i < count_words; i++) { std::cout << words[i] << std::endl; }
+    delete[] words;
+}
+
+TEST(Methods, Split_3) {
+    MyString str("   One");
+    int count_words;
+    MyString *words = str.splitIntoWords(count_words);
+    for (int i = 0; i < count_words; i++) { std::cout << words[i] << std::endl; }
+    delete[] words;
+}
+
+TEST(Methods, Split_4) {
+    MyString str("     ");
+    int count_words;
+    MyString *words = str.splitIntoWords(count_words);
+    for (int i = 0; i < count_words; i++) { std::cout << words[i] << std::endl; }
+    delete[] words;
+}

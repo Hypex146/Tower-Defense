@@ -1,8 +1,6 @@
 #ifndef TOWER_DEFENSE_MYSTRING_H
 #define TOWER_DEFENSE_MYSTRING_H
 
-#include <iostream>
-
 class MyString {
 private:
     // указатель на строку
@@ -33,6 +31,8 @@ public:
 
     // диструктор
     ~MyString();
+
+    void changeChar(int index, char new_char);
 
     // получить длину строки
     int getLength() const;
@@ -129,6 +129,8 @@ public:
 
     // оператор ввода
     friend std::istream &operator>>(std::istream &stream, MyString &object);
+
+    MyString *splitIntoWords(int &count_words) const;
 };
 
 MyString operator+(const MyString &str1, const MyString &str2);

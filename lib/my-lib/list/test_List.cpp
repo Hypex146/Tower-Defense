@@ -1,3 +1,4 @@
+#include <iostream>
 #include "List.h"
 #include "gtest/gtest.h"
 
@@ -119,4 +120,52 @@ TEST(Methods, GetLen_0) {
     list.insert(3, 0);
     list.insert(1, 0);
     EXPECT_EQ(list.getLen(), 5);
+}
+
+TEST(Iterators, Test_0) {
+    List<int> list;
+    list.insert(0, 0);
+    list.insert(1, 0);
+    list.insert(2, 0);
+    list.insert(3, 0);
+    list.insert(4, 0);
+    ListIterator<int> iterator1 = list.createIterator();
+    ListIterator<int> iterator2 = list.createIterator();
+    int value = 4;
+    while (iterator1.hasNext()) {
+        iterator1.next();
+        EXPECT_EQ(iterator1.getCurrent(), value);
+        value--;
+    }
+    iterator2.next();
+    EXPECT_EQ(iterator2.getCurrent(), 4);
+}
+
+TEST(Iterators, Test_1) {
+    List<int> list;
+    list.insert(0, 0);
+    list.insert(1, 0);
+    list.insert(2, 0);
+    list.insert(3, 0);
+    list.insert(4, 0);
+    ListIterator<int> iterator = list.createIterator();
+    iterator.next();
+    EXPECT_EQ(iterator.getCurrent(), 4);
+    iterator.next();
+    iterator.resetCurrent();
+    iterator.next();
+    EXPECT_EQ(iterator.getCurrent(), 4);
+}
+
+TEST(Iterators, Test_2) {
+    List<int> list;
+    list.insert(0, 0);
+    list.insert(1, 0);
+    list.insert(2, 0);
+    list.insert(3, 0);
+    list.insert(4, 0);
+    ListIterator<int> iterator = list.createIterator();
+    iterator.next();
+    *iterator.getPtrToCurrent() = 7;
+    EXPECT_EQ(list.take(0), 7);
 }

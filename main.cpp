@@ -1,10 +1,17 @@
 #include <iostream>
 #include <fstream>
-#include "Configurator.h"
+
+#define ALL_INCLUDE
+#include "AllHeaders.h"
 
 int main() {
-    MyString src("test.txt");
-    MyString tgt("test1.yml");
-    Configurator::copyFile(src, tgt);
+    auto *td = new TowerDefense();
+    td->initModulesDefault();
+    auto *ui = new ConsoleRenderer(td);
+    ui->runUI();
+    delete ui;
+    td->deleteAllModules();
+    delete td;
+    std::cout << "Bye!" << std::endl;
     return 0;
 }

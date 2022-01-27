@@ -1,41 +1,45 @@
 #ifndef TOWER_DEFENSE_CASTLE_H
 #define TOWER_DEFENSE_CASTLE_H
 
-#include <iostream>
-#include "Entity.h"
-#include "Table.h"
-#include "MyString.h"
 
-struct Lvl_Specifications {
+struct LvlSpecificationsForCastle {
     double profitability_;
     double max_HP_;
-    double repair_speed_;
+    double repair_rate_;
     double cost_;
 
-    Lvl_Specifications(double profitability, double max_HP, double repair_speed, double cost);
+    LvlSpecificationsForCastle();
+
+    LvlSpecificationsForCastle(double profitability, double max_HP, double repair_speed, double cost);
 };
 
 class Castle : public Entity {
-private:
-    MyString name_;
+protected:
     int lvl_;
-    double current_HP_;
-    double current_gold_;
-    Table<int, Lvl_Specifications> specifications_table_;
+    double HP_;
+    double gold_;
+    Table<int, LvlSpecificationsForCastle> specifications_table_;
+    double kill_count = 0;
 public:
-    Castle(Position position, const MyString &name, int lvl, double current_HP, double current_gold,
-           const Table<int, Lvl_Specifications> &specifications_table);
+    Castle(TowerDefense *tower_defense, Position position, const MyString &name, int lvl, double current_HP,
+           double current_gold,
+           const Table<int, LvlSpecificationsForCastle> &specifications_table);
 
-    Castle(int x, int y, const MyString &name, int lvl, double current_HP, double current_gold,
-           const Table<int, Lvl_Specifications> &specifications_table);
+    Castle(TowerDefense *tower_defense, int x, int y, const MyString &name, int lvl, double current_HP,
+           double current_gold,
+           const Table<int, LvlSpecificationsForCastle> &specifications_table);
 
-    Castle(Position position, const MyString &name, double current_gold,
-           const Table<int, Lvl_Specifications> &specifications_table);
+    Castle(TowerDefense *tower_defense, Position position, const MyString &name, double current_gold,
+           const Table<int, LvlSpecificationsForCastle> &specifications_table);
 
-    Castle(int x, int y, const MyString &name, double current_gold,
-           const Table<int, Lvl_Specifications> &specifications_table);
+    Castle(TowerDefense *tower_defense, int x, int y, const MyString &name, double current_gold,
+           const Table<int, LvlSpecificationsForCastle> &specifications_table);
 
     ~Castle() override = default;
+
+    void addKill();
+
+    int getKillsCount() const;
 
     double getProfitability() const;
 
@@ -43,21 +47,33 @@ public:
 
     double getRepairSpeed() const;
 
-    MyString getName() const;
-
     int getLvl() const;
 
-    double getCurrentHP() const;
+    double getHP() const;
 
-    double getCurrentGold() const;
+    double getGold() const;
 
-    Lvl_Specifications getLvlSpecByLvl(int lvl) const;
+    double getLvlCost(int lvl) const;
 
-    void setCurrentGold(double current_gold);
+    LvlSpecificationsForCastle getLvlSpec(int lvl) const;
 
-    void setCurrentHP(double current_HP);
+    void setGold(double current_gold);
+
+    void addGold(double gold);
+
+    void setHP(double current_HP);
 
     void setLvl(int lvl);
+
+    void lvlUp();
+
+    bool possibleUpLvl() const;
+
+    bool canUpLvl() const;
+
+    void takeDamage(double damage);
+
+    void update() override;
 
 };
 

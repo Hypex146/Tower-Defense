@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_12260/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_12260.dir/build.make CMakeFiles/cmTC_12260.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_eb808/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_eb808.dir/build.make CMakeFiles/cmTC_eb808.dir/build
 gmake[1]: Entering directory '/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_12260.dir/src.c.o
-/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_12260.dir/src.c.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_12260
-/home/vlad_/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12260.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_12260.dir/src.c.o -o cmTC_12260 
-/usr/bin/ld: CMakeFiles/cmTC_12260.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_eb808.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_eb808.dir/src.c.o -c /mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_eb808
+/home/vlad_/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb808.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_eb808.dir/src.c.o -o cmTC_eb808 
+/usr/bin/ld: CMakeFiles/cmTC_eb808.dir/src.c.o: in function `main':
 src.c:(.text+0x2f): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x3b): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x47): undefined reference to `pthread_cancel'
 /usr/bin/ld: src.c:(.text+0x58): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_12260.dir/build.make:99: cmTC_12260] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_eb808.dir/build.make:99: cmTC_eb808] Error 1
 gmake[1]: Leaving directory '/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_12260/fast] Error 2
+gmake: *** [Makefile:127: cmTC_eb808/fast] Error 2
 
 
 Source file was:
@@ -43,18 +43,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_843ac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_843ac.dir/build.make CMakeFiles/cmTC_843ac.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ea1d0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ea1d0.dir/build.make CMakeFiles/cmTC_ea1d0.dir/build
 gmake[1]: Entering directory '/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_843ac.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_843ac.dir/CheckFunctionExists.c.o -c /home/vlad_/cmake-3.20.6/Modules/CheckFunctionExists.c
-Linking C executable cmTC_843ac
-/home/vlad_/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_843ac.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_843ac.dir/CheckFunctionExists.c.o -o cmTC_843ac  -lpthreads 
+Building C object CMakeFiles/cmTC_ea1d0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_ea1d0.dir/CheckFunctionExists.c.o -c /home/vlad_/cmake-3.20.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ea1d0
+/home/vlad_/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea1d0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_ea1d0.dir/CheckFunctionExists.c.o -o cmTC_ea1d0  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_843ac.dir/build.make:99: cmTC_843ac] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_ea1d0.dir/build.make:99: cmTC_ea1d0] Error 1
 gmake[1]: Leaving directory '/mnt/f/programming/C++/labs_3_sem/Tower-Defense/cmake-build-debug/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_843ac/fast] Error 2
+gmake: *** [Makefile:127: cmTC_ea1d0/fast] Error 2
 
 
 

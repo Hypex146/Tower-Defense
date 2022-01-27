@@ -1,0 +1,14 @@
+Max-lvl: 3
+Profitability-lvl-1: 5
+Max-HP-lvl-1: 100
+Cost-lvl-1: 10
+Repair-rate-lvl-1: 1
+Profitability-lvl-2: 10
+Max-HP-lvl-2: 1500
+Cost-lvl-2: 20
+Repair-rate-lvl-2: 2
+Profitability-lvl-3: 20
+Max-HP-lvl-3: 2000
+Cost-lvl-3: 30
+Repair-rate-lvl-3: 3
+Start-gold: 500

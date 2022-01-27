@@ -78,3 +78,84 @@ TEST(Methods, GetInfoByIndex_0) {
     EXPECT_EQ(table.getInfoByIndex(1), -1);
     EXPECT_EQ(table.getInfoByIndex(2), 2);
 }
+
+TEST(Iterator, Constructor_Begin) {
+    Table<int, int> table;
+    table.put(0, 0);
+    table.put(1, -1);
+    table.put(-2, 2);
+    TableIterator<int, int> iterator = table.begin();
+    EXPECT_EQ((*iterator).key, 0);
+    EXPECT_EQ((*iterator).info, 0);
+}
+
+TEST(Iterator, Constructor_End) {
+    Table<int, int> table;
+    table.put(0, 0);
+    table.put(1, -1);
+    table.put(-2, 2);
+    TableIterator<int, int> iterator = table.end();
+    EXPECT_EQ((*iterator).key, -2);
+    EXPECT_EQ((*iterator).info, 2);
+}
+
+TEST(Iterator, Constructor_Assignment) {
+    Table<int, int> table;
+    table.put(0, 0);
+    table.put(1, -1);
+    table.put(-2, 2);
+    TableIterator<int, int> iterator1 = table.begin();
+    TableIterator<int, int> iterator2(iterator1);
+    EXPECT_EQ((*iterator1).key, 0);
+    EXPECT_EQ((*iterator1).info, 0);
+    EXPECT_EQ((*iterator1).key, (*iterator2).key);
+    EXPECT_EQ((*iterator1).info, (*iterator2).info);
+    ++iterator1;
+    EXPECT_EQ((*iterator1).key, 1);
+    EXPECT_EQ((*iterator1).info, -1);
+    EXPECT_EQ((*iterator2).key, 0);
+    EXPECT_EQ((*iterator2).info, 0);
+}
+
+TEST(Iterator, Get_0) {
+    Table<int, int> table;
+    table.put(0, 0);
+    table.put(1, -1);
+    table.put(-2, 2);
+    TableIterator<int, int> iterator = table.begin();
+    EXPECT_EQ((*iterator).key, 0);
+    EXPECT_EQ((*iterator).info, 0);
+    ++iterator;
+    EXPECT_EQ((*iterator).key, 1);
+    EXPECT_EQ((*iterator).info, -1);
+    ++iterator;
+    EXPECT_EQ((*iterator).key, -2);
+    EXPECT_EQ((*iterator).info, 2);
+}
+
+TEST(Iterator, Get_1) {
+    Table<int, int> table;
+    table.put(0, 0);
+    table.put(1, -1);
+    table.put(-2, 2);
+    TableIterator<int, int> iterator = table.end();
+    EXPECT_EQ((*iterator).key, -2);
+    EXPECT_EQ((*iterator).info, 2);
+}
+
+TEST(Iterator, Equals_0) {
+    Table<int, int> table;
+    table.put(0, 0);
+    table.put(1, -1);
+    table.put(-2, 2);
+    TableIterator<int, int> iterator1 = table.begin();
+    TableIterator<int, int> iterator2 = table.end();
+    EXPECT_EQ(iterator1 != iterator2, true);
+    EXPECT_EQ(iterator1 == iterator2, false);
+    ++iterator1;
+    EXPECT_EQ(iterator1 != iterator2, true);
+    EXPECT_EQ(iterator1 == iterator2, false);
+    ++iterator1;
+    EXPECT_EQ(iterator1 != iterator2, false);
+    EXPECT_EQ(iterator1 == iterator2, true);
+}
