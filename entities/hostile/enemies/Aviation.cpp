@@ -1,29 +1,40 @@
+#define ALL_INCLUDE
+
+#include "AllHeaders.h"
 #include "Aviation.h"
 
-Aviation::Aviation(Position position, const MyString &name, double HP, double max_HP, double regeneration_rate,
+
+Aviation::Aviation(TowerDefense *tower_defense, Position position, const MyString &name, double HP, double max_HP,
+                   double regeneration_rate,
                    double speed, double damage_coefficient, double wall_damage, int ammunition)
-        : Enemy(position, name, EntityType::AVIATION, HP, max_HP, regeneration_rate, speed, damage_coefficient) {
+        : Enemy(tower_defense, position, name, EntityType::AVIATION, HP, max_HP, regeneration_rate, speed,
+                damage_coefficient) {
     wall_damage_ = wall_damage;
     ammunition_ = ammunition;
 }
 
-Aviation::Aviation(int x, int y, const MyString &name, double HP, double max_HP, double regeneration_rate, double speed,
+Aviation::Aviation(TowerDefense *tower_defense, int x, int y, const MyString &name, double HP, double max_HP,
+                   double regeneration_rate, double speed,
                    double damage_coefficient, double wall_damage, int ammunition)
-        : Enemy(x, y, name, EntityType::AVIATION, HP, max_HP, regeneration_rate, speed, damage_coefficient) {
+        : Enemy(tower_defense, x, y, name, EntityType::AVIATION, HP, max_HP, regeneration_rate, speed,
+                damage_coefficient) {
     wall_damage_ = wall_damage;
     ammunition_ = ammunition;
 }
 
-Aviation::Aviation(Position position, const MyString &name, double max_HP, double regeneration_rate, double speed,
+Aviation::Aviation(TowerDefense *tower_defense, Position position, const MyString &name, double max_HP,
+                   double regeneration_rate, double speed,
                    double damage_coefficient, double wall_damage, int ammunition)
-        : Enemy(position, name, EntityType::AVIATION, max_HP, regeneration_rate, speed, damage_coefficient) {
+        : Enemy(tower_defense, position, name, EntityType::AVIATION, max_HP, regeneration_rate, speed,
+                damage_coefficient) {
     wall_damage_ = wall_damage;
     ammunition_ = ammunition;
 }
 
-Aviation::Aviation(int x, int y, const MyString &name, double max_HP, double regeneration_rate, double speed,
+Aviation::Aviation(TowerDefense *tower_defense, int x, int y, const MyString &name, double max_HP,
+                   double regeneration_rate, double speed,
                    double damage_coefficient, double wall_damage, int ammunition)
-        : Enemy(x, y, name, EntityType::AVIATION, max_HP, regeneration_rate, speed, damage_coefficient) {
+        : Enemy(tower_defense, x, y, name, EntityType::AVIATION, max_HP, regeneration_rate, speed, damage_coefficient) {
     wall_damage_ = wall_damage;
     ammunition_ = ammunition;
 }
@@ -46,33 +57,78 @@ void Aviation::setAmmunition(int ammunition) {
     ammunition_ = ammunition;
 }
 
+Aviation::Aviation(TowerDefense *tower_defense, Position position, const MyString &name, double HP, double max_HP,
+                   double regeneration_rate,
+                   double speed, double damage_coefficient, double wall_damage, int ammunition, EntityType type)
+        : Enemy(tower_defense, position, name, type, HP, max_HP, regeneration_rate, speed, damage_coefficient) {
+    wall_damage_ = wall_damage;
+    ammunition_ = ammunition;
+}
+
+Aviation::Aviation(TowerDefense *tower_defense, int x, int y, const MyString &name, double HP, double max_HP,
+                   double regeneration_rate,
+                   double speed, double damage_coefficient, double wall_damage, int ammunition, EntityType type)
+        : Enemy(tower_defense, x, y, name, type, HP, max_HP, regeneration_rate, speed, damage_coefficient) {
+    wall_damage_ = wall_damage;
+    ammunition_ = ammunition;
+}
+
+Aviation::Aviation(TowerDefense *tower_defense, Position position, const MyString &name, double max_HP,
+                   double regeneration_rate,
+                   double speed, double damage_coefficient, double wall_damage, int ammunition, EntityType type)
+        : Enemy(tower_defense, position, name, type, max_HP, regeneration_rate, speed, damage_coefficient) {
+    wall_damage_ = wall_damage;
+    ammunition_ = ammunition;
+}
+
+Aviation::Aviation(TowerDefense *tower_defense, int x, int y, const MyString &name, double max_HP,
+                   double regeneration_rate,
+                   double speed, double damage_coefficient, double wall_damage, int ammunition, EntityType type)
+        : Enemy(tower_defense, x, y, name, type, max_HP, regeneration_rate, speed, damage_coefficient) {
+    wall_damage_ = wall_damage;
+    ammunition_ = ammunition;
+}
+
+void Aviation::tryAttackWall() {
+    List<EntityType> filter;
+    filter.insert(EntityType::WALL, 0);
+    Wall *wall = (Wall *) (tower_defense_->getEntitiesManager()->getNearbyEntity(position_, filter));
+    if (wall != nullptr && ammunition_ > 0) {
+        wall->takeDamage(wall_damage_ * buffs_.damage_coefficient_);
+        ammunition_--;
+    }
+}
+
+void Aviation::move() {
+    count_of_steps_ += speed_ * buffs_.speed_;
+    while (count_of_steps_ >= 1 && isAlive()) {
+        int dx = tower_defense_->getEntitiesManager()->getCastle()->getPos().x_ - position_.x_;
+        int dy = tower_defense_->getEntitiesManager()->getCastle()->getPos().y_ - position_.y_;
+        Position next_position = position_;
+        if (dx != 0 && dy != 0) {
+            if (tower_defense_->random(1, 2) == 1) {
+                if (dx > 0) { next_position.x_ += 1; }
+                else { next_position.x_ -= 1; }
+            } else {
+                if (dy > 0) { next_position.y_ += 1; }
+                else { next_position.y_ -= 1; }
+            }
+        } else if (dx != 0) {
+            if (dx > 0) { next_position.x_ += 1; }
+            else { next_position.x_ -= 1; }
+        } else {
+            if (dy > 0) { next_position.y_ += 1; }
+            else { next_position.y_ -= 1; }
+        }
+        position_ = next_position;
+        count_of_steps_--;
+        tryAttackWall();
+        tryAttackCastle();
+    }
+}
+
 void Aviation::update() {
-}
-
-Aviation::Aviation(Position position, const MyString &name, double HP, double max_HP, double regeneration_rate,
-                   double speed, double damage_coefficient, double wall_damage, int ammunition, EntityType type)
-        : Enemy(position, name, type, HP, max_HP, regeneration_rate, speed, damage_coefficient) {
-    wall_damage_ = wall_damage;
-    ammunition_ = ammunition;
-}
-
-Aviation::Aviation(int x, int y, const MyString &name, double HP, double max_HP, double regeneration_rate,
-                   double speed, double damage_coefficient, double wall_damage, int ammunition, EntityType type)
-        : Enemy(x, y, name, type, HP, max_HP, regeneration_rate, speed, damage_coefficient) {
-    wall_damage_ = wall_damage;
-    ammunition_ = ammunition;
-}
-
-Aviation::Aviation(Position position, const MyString &name, double max_HP, double regeneration_rate,
-                   double speed, double damage_coefficient, double wall_damage, int ammunition, EntityType type)
-        : Enemy(position, name, type, max_HP, regeneration_rate, speed, damage_coefficient) {
-    wall_damage_ = wall_damage;
-    ammunition_ = ammunition;
-}
-
-Aviation::Aviation(int x, int y, const MyString &name, double max_HP, double regeneration_rate,
-                   double speed, double damage_coefficient, double wall_damage, int ammunition, EntityType type)
-        : Enemy(x, y, name, type, max_HP, regeneration_rate, speed, damage_coefficient) {
-    wall_damage_ = wall_damage;
-    ammunition_ = ammunition;
+    Enemy::update();
+    addHP(regeneration_rate_ * buffs_.regeneration_rate_);
+    move();
 }

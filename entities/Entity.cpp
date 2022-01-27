@@ -1,15 +1,27 @@
+#define ENTITIES_INCLUDE
+#define STD_LIBS_INCLUDE
+#define MY_LIBS_INCLUDE
+#include "AllHeaders.h"
 #include "Entity.h"
+
 
 Position::Position(int x, int y) : x_(x), y_(y) {}
 
-Entity::Entity(Position position, EntityType type, const MyString &name) : position_(position), is_alive_(true),
-                                                                           type_(type) { name_ = name; }
+bool operator==(const Position &pos1, const Position &pos2) {
+    return pos1.x_ == pos2.x_ && pos1.y_ == pos2.y_;
+}
 
-Entity::Entity(int x, int y, EntityType type, const MyString &name) : Entity(Position(x, y), type, name) {}
+Entity::Entity(TowerDefense *tower_defense, Position position, EntityType type, const MyString &name)
+        : position_(position), is_alive_(true),
+          type_(type) {
+    name_ = name;
+    tower_defense_ = tower_defense;
+}
+
+Entity::Entity(TowerDefense *tower_defense, int x, int y, EntityType type, const MyString &name) : Entity(tower_defense,
+        Position(x, y), type, name) {}
 
 Position Entity::getPos() const { return position_; }
-
-void Entity::update() {}
 
 bool Entity::isAlive() const { return is_alive_; }
 

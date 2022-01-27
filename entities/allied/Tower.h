@@ -1,15 +1,11 @@
 #ifndef TOWER_DEFENSE_TOWER_H
 #define TOWER_DEFENSE_TOWER_H
 
-#include <iostream>
-#include "MyString.h"
-#include "Entity.h"
-#include "Table.h"
 
 struct LvlSpecificationsForTower {
     double attack_radius_;
     double damage_;
-    double fire_rate_;
+    double reload_time_;
     double cost_;
 
     LvlSpecificationsForTower();
@@ -21,16 +17,25 @@ class Tower : public Entity {
 private:
     int lvl_;
     Table<int, LvlSpecificationsForTower> specifications_table_;
+    double timeToFire_;
+    List<EntityType> enemy_filter_;
+
+    bool canFire() const;
+
+    List<EntityType> createEnemyFilter();
+
 public:
-    Tower(Position position, const MyString &name, int lvl,
+    Tower(TowerDefense *tower_defense, Position position, const MyString &name, int lvl,
           const Table<int, LvlSpecificationsForTower> &specifications_table);
 
-    Tower(int x, int y, const MyString &name, int lvl,
+    Tower(TowerDefense *tower_defense, int x, int y, const MyString &name, int lvl,
           const Table<int, LvlSpecificationsForTower> &specifications_table);
 
-    Tower(Position position, const MyString &name, const Table<int, LvlSpecificationsForTower> &specifications_table);
+    Tower(TowerDefense *tower_defense, Position position, const MyString &name,
+          const Table<int, LvlSpecificationsForTower> &specifications_table);
 
-    Tower(int x, int y, const MyString &name, const Table<int, LvlSpecificationsForTower> &specifications_table);
+    Tower(TowerDefense *tower_defense, int x, int y, const MyString &name,
+          const Table<int, LvlSpecificationsForTower> &specifications_table);
 
     ~Tower() override = default;
 

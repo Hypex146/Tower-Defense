@@ -1,9 +1,8 @@
 #ifndef TOWER_DEFENSE_ENTITY_H
 #define TOWER_DEFENSE_ENTITY_H
 
-#include <iostream>
-#include "MyString.h"
-#include <math.h>
+
+class TowerDefense;
 
 enum class EntityType {
     CASTLE,
@@ -23,7 +22,13 @@ struct Position {
     int y_;
 
     Position(int x, int y);
+
+    Position() = default;
+
+    friend bool operator==(const Position &pos1, const Position &pos2);
 };
+
+bool operator==(const Position &pos1, const Position &pos2);
 
 class Entity {
 protected:
@@ -31,10 +36,11 @@ protected:
     EntityType type_;
     bool is_alive_;
     MyString name_;
+    TowerDefense *tower_defense_;
 public:
-    explicit Entity(Position position, EntityType type, const MyString &name);
+    explicit Entity(TowerDefense *tower_defense, Position position, EntityType type, const MyString &name);
 
-    Entity(int x, int y, EntityType type, const MyString &name);
+    Entity(TowerDefense *tower_defense, int x, int y, EntityType type, const MyString &name);
 
     Entity(const Entity &obj) = default;
 
@@ -52,7 +58,7 @@ public:
 
     virtual void setPos(int x, int y);
 
-    virtual void update();
+    virtual void update() = 0;
 
     virtual bool isAlive() const;
 

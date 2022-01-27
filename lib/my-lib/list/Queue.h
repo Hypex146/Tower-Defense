@@ -1,8 +1,6 @@
 #ifndef TOWER_DEFENSE_QUEUE_H
 #define TOWER_DEFENSE_QUEUE_H
 
-#include "List.h"
-
 template<class T>
 class Queue : private List<T> {
 public:

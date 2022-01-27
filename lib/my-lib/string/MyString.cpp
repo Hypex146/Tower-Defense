@@ -1,4 +1,9 @@
+#define STD_LIBS_INCLUDE
+#define MY_LIBS_INCLUDE
+
+#include "AllHeaders.h"
 #include "MyString.h"
+
 
 MyString::MyString() {
     string_ = new char[1];
@@ -371,4 +376,45 @@ std::istream &operator>>(std::istream &stream, MyString &object) {
     stream.clear();
     stream.ignore();
     return stream;
+}
+
+void MyString::changeChar(int index, char new_char) {
+    if (index >= getLength() || index < 0) { throw std::invalid_argument("Bad index"); }
+    string_[index] = new_char;
+}
+
+MyString *MyString::splitIntoWords(int &count_words) const {
+    int i = 0;
+    bool previous_is_word = false;
+    count_words = 0;
+    while (string_[i] != '\0') {
+        char current_char = string_[i];
+        if (current_char != ' ' && !previous_is_word) {
+            count_words++;
+            previous_is_word = true;
+        }
+        if (current_char == ' ') { previous_is_word = false; }
+        i++;
+    }
+    auto *res = new MyString[count_words];
+    i = 0;
+    int start = 0;
+    int end = 0;
+    previous_is_word = false;
+    int splitted = 0;
+    while (string_[i] != '\0') {
+        if (!previous_is_word && string_[i] != ' ') {
+            start = i;
+            previous_is_word = true;
+        }
+        if (previous_is_word && string_[i] == ' ') {
+            end = i - 1;
+            res[splitted] = getSection(start, end);
+            splitted++;
+            previous_is_word = false;
+        }
+        i++;
+    }
+    if (previous_is_word) { res[splitted] = getSection(start, i - 1); }
+    return res;
 }

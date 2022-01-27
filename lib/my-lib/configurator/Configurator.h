@@ -1,10 +1,6 @@
 #ifndef TOWER_DEFENSE_CONFIGURATOR_H
 #define TOWER_DEFENSE_CONFIGURATOR_H
 
-#include <iostream>
-#include <fstream>
-#include "MyString.h"
-
 class Configurator {
 private:
     // Поток ввода/вывода для файла.

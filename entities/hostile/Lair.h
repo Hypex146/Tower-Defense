@@ -1,24 +1,27 @@
 #ifndef TOWER_DEFENSE_LAIR_H
 #define TOWER_DEFENSE_LAIR_H
 
-#include <iostream>
-#include "Entity.h"
-#include "Table.h"
-#include "MyString.h"
 
 class Lair : public Entity {
 private:
-    Table<EntityType, int> enemy_table_;
-public:
-    Lair(Position position, const MyString &name, const Table<EntityType, int> &enemy_table);
+    Table<EntityType, double> enemy_table_;
+    Table<EntityType, double> time_to_spawn_;
 
-    Lair(int x, int y, const MyString &name, const Table<EntityType, int> &enemy_table);
+    BuffsAura
+    generateBuffsAura(double max_speed, double max_max_HP, double max_regeneration_rate, double max_damage_coefficient,
+                      double max_damage_resist);
+
+public:
+    Lair(TowerDefense *tower_defense, Position position, const MyString &name,
+         const Table<EntityType, double> &enemy_table);
+
+    Lair(TowerDefense *tower_defense, int x, int y, const MyString &name, const Table<EntityType, double> &enemy_table);
 
     ~Lair() override = default;
 
-    void forcedSpawnEnemy(EntityType enemy); //TODO
+    void forcedSpawnEnemy(EntityType enemy_type);
 
-    void spawnEnemyIfNeed(); //TODO
+    void spawnEnemyIfNeed();
 
     void update() override;
 

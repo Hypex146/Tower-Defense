@@ -1,16 +1,13 @@
+#define ALL_INCLUDE
+
+#include "AllHeaders.h"
 #include "Enemy.h"
 
-BuffsAura::BuffsAura(double speed, double max_HP, double regeneration_rate, double damage_coefficient,
-                     double damage_resist) {
-    speed_ = speed;
-    max_HP_ = max_HP;
-    regeneration_rate_ = regeneration_rate;
-    damage_coefficient_ = damage_coefficient;
-    damage_resist_ = damage_resist;
-}
 
-Enemy::Enemy(Position position, const MyString &name, EntityType type, double HP, double max_HP,
-             double regeneration_rate, double speed, double damage_coefficient) : Entity(position, type, name) {
+Enemy::Enemy(TowerDefense *tower_defense, Position position, const MyString &name, EntityType type, double HP,
+             double max_HP,
+             double regeneration_rate, double speed, double damage_coefficient) : Entity(tower_defense, position, type,
+                                                                                         name) {
     HP_ = HP;
     max_HP_ = max_HP;
     regeneration_rate_ = regeneration_rate;
@@ -18,8 +15,9 @@ Enemy::Enemy(Position position, const MyString &name, EntityType type, double HP
     damage_coefficient_ = damage_coefficient;
 }
 
-Enemy::Enemy(int x, int y, const MyString &name, EntityType type, double HP, double max_HP, double regeneration_rate,
-             double speed, double damage_coefficient) : Entity(x, y, type, name) {
+Enemy::Enemy(TowerDefense *tower_defense, int x, int y, const MyString &name, EntityType type, double HP, double max_HP,
+             double regeneration_rate,
+             double speed, double damage_coefficient) : Entity(tower_defense, x, y, type, name) {
     HP_ = HP;
     max_HP_ = max_HP;
     regeneration_rate_ = regeneration_rate;
@@ -27,8 +25,9 @@ Enemy::Enemy(int x, int y, const MyString &name, EntityType type, double HP, dou
     damage_coefficient_ = damage_coefficient;
 }
 
-Enemy::Enemy(Position position, const MyString &name, EntityType type, double max_HP, double regeneration_rate,
-             double speed, double damage_coefficient) : Entity(position, type, name) {
+Enemy::Enemy(TowerDefense *tower_defense, Position position, const MyString &name, EntityType type, double max_HP,
+             double regeneration_rate,
+             double speed, double damage_coefficient) : Entity(tower_defense, position, type, name) {
     HP_ = max_HP;
     max_HP_ = max_HP;
     regeneration_rate_ = regeneration_rate;
@@ -36,8 +35,9 @@ Enemy::Enemy(Position position, const MyString &name, EntityType type, double ma
     damage_coefficient_ = damage_coefficient;
 }
 
-Enemy::Enemy(int x, int y, const MyString &name, EntityType type, double max_HP, double regeneration_rate, double speed,
-             double damage_coefficient) : Entity(x, y, type, name) {
+Enemy::Enemy(TowerDefense *tower_defense, int x, int y, const MyString &name, EntityType type, double max_HP,
+             double regeneration_rate, double speed,
+             double damage_coefficient) : Entity(tower_defense, x, y, type, name) {
     HP_ = max_HP;
     max_HP_ = max_HP;
     regeneration_rate_ = regeneration_rate;
@@ -69,7 +69,10 @@ void Enemy::setHP(double HP) {
     if (HP > max_HP_ * buffs_.max_HP_) { HP = max_HP_ * buffs_.max_HP_; }
     HP_ = HP;
     if (HP_ < 0) { HP_ = 0; }
-    if (HP_ <= 0) { kill(); }
+    if (HP_ <= 0) {
+        tower_defense_->getEntitiesManager()->getCastle()->addKill();
+        kill();
+    }
 }
 
 void Enemy::addHP(double HP) {
@@ -77,7 +80,8 @@ void Enemy::addHP(double HP) {
 }
 
 void Enemy::takeDamage(double damage) {
-    damage *= buffs_.damage_resist_;
+    damage -= (damage * (buffs_.damage_resist_ - 1));
+    if (damage < 0) { damage = 0; }
     setHP(HP_ - damage);
 }
 
@@ -127,4 +131,36 @@ double Enemy::getDamageCoefficientBuff() const {
 
 double Enemy::getDamageResistBuff() const {
     return buffs_.damage_resist_;
+}
+
+void Enemy::update() {
+    resetBuffs();
+    double radius = tower_defense_->getSettingsDatabase()->getMaxHeroBuffsSettings().radius;
+    List<Entity *> heroes = tower_defense_->getEntitiesManager()->getNearbyHeroEntities(position_, radius);
+    ListIterator<Entity *> iterator = heroes.createIterator();
+    while (iterator.hasNext()) {
+        iterator.next();
+        Entity *entity = iterator.getCurrent();
+        Hero *hero = nullptr;
+        if (entity->getType() == EntityType::HERO_LIGHT_INFANTRY) {
+            hero = static_cast<Hero *>(dynamic_cast<HeroLightInfantry *>(iterator.getCurrent()));
+        } else if (entity->getType() == EntityType::HERO_HEAVY_INFANTRY) {
+            hero = static_cast<Hero *>(dynamic_cast<HeroHeavyInfantry *>(iterator.getCurrent()));
+        } else {
+            hero = static_cast<Hero *>(dynamic_cast<HeroAviation *>(iterator.getCurrent()));
+        }
+        buffs_.max_HP_ += hero->getBuffsAura().max_HP_;
+        buffs_.damage_resist_ += hero->getBuffsAura().damage_resist_;
+        buffs_.damage_coefficient_ += hero->getBuffsAura().damage_coefficient_;
+        buffs_.speed_ += hero->getBuffsAura().speed_;
+        buffs_.regeneration_rate_ += hero->getBuffsAura().regeneration_rate_;
+    }
+}
+
+void Enemy::tryAttackCastle() {
+    if (tower_defense_->getEntitiesManager()->getCastle()->getPos() == position_) {
+        tower_defense_->getEntitiesManager()->getCastle()->takeDamage(
+                HP_ * damage_coefficient_ * buffs_.damage_coefficient_);
+        kill();
+    }
 }

@@ -1,10 +1,6 @@
 #ifndef TOWER_DEFENSE_LIGHTINFANTRY_H
 #define TOWER_DEFENSE_LIGHTINFANTRY_H
 
-#include <iostream>
-#include "Enemy.h"
-#include "MyString.h"
-#include <ctime>
 
 class LightInfantry : public Enemy {
 private:
@@ -12,30 +8,36 @@ private:
 
     bool dodged() const;
 
+    void move();
+
 protected:
-    LightInfantry(Position position, const MyString &name, double HP, double max_HP, double regeneration_rate,
+    LightInfantry(TowerDefense *tower_defense, Position position, const MyString &name, double HP, double max_HP,
+                  double regeneration_rate,
                   double speed, double damage_coefficient, double dodge_chance, EntityType type);
 
-    LightInfantry(int x, int y, const MyString &name, double HP, double max_HP, double regeneration_rate,
+    LightInfantry(TowerDefense *tower_defense, int x, int y, const MyString &name, double HP, double max_HP,
+                  double regeneration_rate,
                   double speed, double damage_coefficient, double dodge_chance, EntityType type);
 
-    LightInfantry(Position position, const MyString &name, double max_HP, double regeneration_rate,
+    LightInfantry(TowerDefense *tower_defense, Position position, const MyString &name, double max_HP,
+                  double regeneration_rate,
                   double speed, double damage_coefficient, double dodge_chance, EntityType type);
 
-    LightInfantry(int x, int y, const MyString &name, double max_HP, double regeneration_rate,
+    LightInfantry(TowerDefense *tower_defense, int x, int y, const MyString &name, double max_HP,
+                  double regeneration_rate,
                   double speed, double damage_coefficient, double dodge_chance, EntityType type);
 
 public:
-    LightInfantry(Position position, const MyString &name, double HP, double max_HP,
+    LightInfantry(TowerDefense *tower_defense, Position position, const MyString &name, double HP, double max_HP,
                   double regeneration_rate, double speed, double damage_coefficient, double dodge_chance);
 
-    LightInfantry(Position position, const MyString &name, double max_HP,
+    LightInfantry(TowerDefense *tower_defense, Position position, const MyString &name, double max_HP,
                   double regeneration_rate, double speed, double damage_coefficient, double dodge_chance);
 
-    LightInfantry(int x, int y, const MyString &name, double HP, double max_HP,
+    LightInfantry(TowerDefense *tower_defense, int x, int y, const MyString &name, double HP, double max_HP,
                   double regeneration_rate, double speed, double damage_coefficient, double dodge_chance);
 
-    LightInfantry(int x, int y, const MyString &name, double max_HP,
+    LightInfantry(TowerDefense *tower_defense, int x, int y, const MyString &name, double max_HP,
                   double regeneration_rate, double speed, double damage_coefficient, double dodge_chance);
 
     double getDodgeChance() const;
@@ -44,7 +46,7 @@ public:
 
     void takeDamage(double damage) override;
 
-    void update() override; //TODO
+    void update() override;
 
 };
 

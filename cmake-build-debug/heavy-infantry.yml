@@ -1,0 +1,6 @@
+Damage-coefficient: 1
+Regeneration-rate: 0.5
+Speed: 0.5
+Max-HP: 15
+Wall-damage: 15
+Wall-attack-radius: 2

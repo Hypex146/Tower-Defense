@@ -1,8 +1,6 @@
 #ifndef TOWER_DEFENSE_GRAPH_H
 #define TOWER_DEFENSE_GRAPH_H
 
-#include "Lists_collection.h"
-
 template<class T>
 struct Vertex {
     T id_;
@@ -22,13 +20,13 @@ class Graph {
 private:
     List<Vertex<T>> vertexes_;
 
-    int getIndexOfVertex(T id) {
+    int getIndexOfVertex(T id) const {
         Vertex<T> vertex;
         vertex.id_ = id;
         return vertexes_.getValueIndex(vertex);
     }
 
-    void calculateWays(T start_id, bool **used, int **parent) {
+    void calculateWays(T start_id, bool **used, int **parent) const {
         int vertex_count = vertexes_.getLen();
         int start_index = getIndexOfVertex(start_id);
         Queue<int> queue;
@@ -112,7 +110,7 @@ public:
         return vertexes_.take(index);
     }
 
-    bool hasVertex(T id) {
+    bool hasVertex(T id) const {
         vertexes_.resetCurrent();
         if (!vertexes_.hasNext()) { return false; }
         do {
@@ -178,7 +176,7 @@ public:
         vertexes_.remove(vertex_index);
     }
 
-    void print() {
+    void print() const {
         vertexes_.resetCurrent();
         while (vertexes_.hasNext()) {
             vertexes_.next();
@@ -192,7 +190,7 @@ public:
         }
     }
 
-    bool hasWay(T start_id, T end_id) {
+    bool hasWay(T start_id, T end_id) const {
         if (start_id == end_id) { return true; }
         bool result = false;
         bool *used = nullptr;
@@ -205,7 +203,7 @@ public:
         return result;
     }
 
-    List<int> getWay(T start_id, T end_id) {
+    List<int> getWay(T start_id, T end_id) const {
         List<int> list;
         if (start_id == end_id) { return list; }
         bool *used = nullptr;
@@ -223,9 +221,9 @@ public:
         return list;
     }
 
-    int getNextStep(T start_id, T end_id) {
+    int getNextStep(T start_id, T end_id) const {
         List<int> list = getWay(start_id, end_id);
-        if (list.getLen() == 0) { return -1; }
+        if (list.getLen() <= 1) { return -1; }
         return list.take(1);
     }
 

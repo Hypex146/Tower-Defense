@@ -1,8 +1,6 @@
 #ifndef TOWER_DEFENSE_LIST_H
 #define TOWER_DEFENSE_LIST_H
 
-#include <iostream>
-
 template<class T>
 struct Node {
     T info_;
@@ -10,7 +8,11 @@ struct Node {
 };
 
 template<class T>
+class ListIterator;
+
+template<class T>
 class List {
+    friend ListIterator<T>;
 private:
     Node<T> *head_;
     mutable Node<T> *current_ptr_;
@@ -222,6 +224,59 @@ public:
         return &(current_ptr_->info_);
     }
 
+    ListIterator<T> createIterator() const {
+        return ListIterator<T>(this);
+    }
+
+};
+
+template<class T>
+class ListIterator {
+    friend List<T>;
+private:
+    Node<T> *current_ptr_;
+
+    const List<T> *list_;
+
+    explicit ListIterator(const List<T> *list) {
+        list_ = list;
+        current_ptr_ = list_->head_;
+    }
+
+public:
+    bool hasNext() const {
+        if (!validCurrent()) { throw std::runtime_error("Invalid current ptr!"); }
+        return current_ptr_->next_ != nullptr;
+    }
+
+    bool validCurrent() const {
+        if (current_ptr_ != nullptr) { return true; }
+        return false;
+    }
+
+    bool canGetCurrent() const {
+        if (validCurrent() && current_ptr_ != list_->head_) { return true; }
+        return false;
+    }
+
+    void next() {
+        if (!hasNext()) { throw std::runtime_error("Has not next element!"); }
+        current_ptr_ = current_ptr_->next_;
+    }
+
+    void resetCurrent() {
+        current_ptr_ = list_->head_;
+    }
+
+    T getCurrent() const {
+        if (!canGetCurrent()) { throw std::runtime_error("It is impossible to take this element!"); }
+        return current_ptr_->info_;
+    }
+
+    T *getPtrToCurrent() {
+        if (!canGetCurrent()) { throw std::runtime_error("It is impossible to take this element!"); }
+        return &(current_ptr_->info_);
+    }
 };
 
 #endif //TOWER_DEFENSE_LIST_H

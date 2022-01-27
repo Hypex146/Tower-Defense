@@ -1,4 +1,6 @@
-#include "Graph.h"
+#define MY_LIBS_INCLUDE
+#define STD_LIBS_INCLUDE
+#include "AllHeaders.h"
 #include "gtest/gtest.h"
 
 TEST(Constructors, ZeroParams_0) {
@@ -126,4 +128,6 @@ TEST(Methods, GetNextStep_0) {
     EXPECT_EQ(graph.getNextStep(1, 2), 1);
     EXPECT_EQ(graph.getNextStep(0, 1), 1);
     EXPECT_EQ(graph.getNextStep(0, 0), -1);
+    List<int> list = graph.getWay(0, 0);
+    list.print();
 }

@@ -1,4 +1,10 @@
+#define ENTITIES_INCLUDE
+#define STD_LIBS_INCLUDE
+#define MY_LIBS_INCLUDE
+
+#include "AllHeaders.h"
 #include "Castle.h"
+
 
 LvlSpecificationsForCastle::LvlSpecificationsForCastle(double profitability, double max_HP, double repair_speed,
                                                        double cost) :
@@ -7,8 +13,9 @@ LvlSpecificationsForCastle::LvlSpecificationsForCastle(double profitability, dou
 LvlSpecificationsForCastle::LvlSpecificationsForCastle() : profitability_(-1), max_HP_(-1), repair_rate_(-1),
                                                            cost_(-1) {}
 
-Castle::Castle(Position position, const MyString &name, int lvl, double current_HP, double current_gold,
-               const Table<int, LvlSpecificationsForCastle> &specifications_table) : Entity(position,
+Castle::Castle(TowerDefense *tower_defense, Position position, const MyString &name, int lvl, double current_HP,
+               double current_gold,
+               const Table<int, LvlSpecificationsForCastle> &specifications_table) : Entity(tower_defense, position,
                                                                                             EntityType::CASTLE, name) {
     if (lvl > specifications_table.getCurrentSize()) { throw std::invalid_argument("Exceeding the maximum level!"); }
     if (current_HP <= 0) { throw std::invalid_argument("current_HP = 0 ?!"); }
@@ -21,8 +28,10 @@ Castle::Castle(Position position, const MyString &name, int lvl, double current_
     specifications_table_ = specifications_table;
 }
 
-Castle::Castle(int x, int y, const MyString &name, int lvl, double current_HP, double current_gold,
-               const Table<int, LvlSpecificationsForCastle> &specifications_table) : Entity(x, y, EntityType::CASTLE,
+Castle::Castle(TowerDefense *tower_defense, int x, int y, const MyString &name, int lvl, double current_HP,
+               double current_gold,
+               const Table<int, LvlSpecificationsForCastle> &specifications_table) : Entity(tower_defense, x, y,
+                                                                                            EntityType::CASTLE,
                                                                                             name) {
     if (lvl > specifications_table.getCurrentSize()) { throw std::invalid_argument("Exceeding the maximum level!"); }
     if (current_HP <= 0) { throw std::invalid_argument("current_HP = 0 ?!"); }
@@ -35,17 +44,18 @@ Castle::Castle(int x, int y, const MyString &name, int lvl, double current_HP, d
     specifications_table_ = specifications_table;
 }
 
-Castle::Castle(Position position, const MyString &name, double current_gold,
+Castle::Castle(TowerDefense *tower_defense, Position position, const MyString &name, double current_gold,
                const Table<int, LvlSpecificationsForCastle> &specifications_table)
-        : Entity(position, EntityType::CASTLE, name) {
+        : Entity(tower_defense, position, EntityType::CASTLE, name) {
     gold_ = current_gold;
     specifications_table_ = specifications_table;
     lvl_ = 1;
     HP_ = specifications_table_.getInfoByIndex(lvl_ - 1).max_HP_;
 }
 
-Castle::Castle(int x, int y, const MyString &name, double current_gold,
-               const Table<int, LvlSpecificationsForCastle> &specifications_table) : Entity(x, y, EntityType::CASTLE,
+Castle::Castle(TowerDefense *tower_defense, int x, int y, const MyString &name, double current_gold,
+               const Table<int, LvlSpecificationsForCastle> &specifications_table) : Entity(tower_defense, x, y,
+                                                                                            EntityType::CASTLE,
                                                                                             name) {
     gold_ = current_gold;
     specifications_table_ = specifications_table;
@@ -91,8 +101,10 @@ void Castle::setHP(double current_HP) {
         current_HP = specifications_table_.getInfoByIndex(lvl_ - 1).max_HP_;
     }
     HP_ = current_HP;
-    if (HP_ < 0) { HP_ = 0; }
-    if (HP_ <= 0) { kill(); }
+    if (HP_ <= 0) {
+        HP_ = 0;
+        kill();
+    }
 }
 
 void Castle::setLvl(int lvl) {
@@ -129,5 +141,13 @@ void Castle::addGold(double gold) {
 }
 
 void Castle::update() {
-    //TODO
+    addGold(specifications_table_.getInfoByIndex(lvl_ - 1).profitability_);
+}
+
+void Castle::addKill() {
+    kill_count++;
+}
+
+int Castle::getKillsCount() const {
+    return kill_count;
 }

@@ -1,4 +1,6 @@
-#include "Configurator.h"
+#define STD_LIBS_INCLUDE
+#define MY_LIBS_INCLUDE
+#include "AllHeaders.h"
 
 Configurator::Configurator(const char *file_path) {
     file_path_ = file_path;
@@ -64,7 +66,7 @@ void Configurator::splitKeyAndValue(const MyString &string, MyString &key, MyStr
             key = string(0, split_index - 1);
         }
     } else {
-        throw std::invalid_argument("This key does not exist");
+        throw std::invalid_argument("Error when trying to separate key and value");
     }
 }
 

@@ -10,8 +10,6 @@
 #ifndef TOWER_DEFENSE_TABLE_H
 #define TOWER_DEFENSE_TABLE_H
 
-#include <iostream>
-#include <iterator>
 
 template<class KeyType, class InfoType>
 class TableIterator;
@@ -203,6 +201,16 @@ public:
     InfoType getInfo(KeyType key) const {
         for (int i = 0; i < current_size_; i++) {
             if (cells_[i]->key == key) { return cells_[i]->info; }
+        }
+        throw std::invalid_argument("This key does not exist");
+    }
+
+    void changeInfo(KeyType key, InfoType new_info) {
+        for (int i = 0; i < current_size_; i++) {
+            if (cells_[i]->key == key) {
+                cells_[i]->info = new_info;
+                return;
+            }
         }
         throw std::invalid_argument("This key does not exist");
     }

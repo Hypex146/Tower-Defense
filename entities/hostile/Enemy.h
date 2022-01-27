@@ -1,9 +1,6 @@
 #ifndef TOWER_DEFENSE_ENEMY_H
 #define TOWER_DEFENSE_ENEMY_H
 
-#include <iostream>
-#include "Entity.h"
-#include "MyString.h"
 
 struct BuffCoefficients {
     double speed_ = 1;
@@ -13,40 +10,37 @@ struct BuffCoefficients {
     double damage_resist_ = 1;
 };
 
-struct BuffsAura {
-    double speed_ = 0;
-    double max_HP_ = 0;
-    double regeneration_rate_ = 0;
-    double damage_coefficient_ = 0;
-    double damage_resist_ = 0;
-
-    BuffsAura() = default;
-
-    BuffsAura(double speed, double max_HP, double regeneration_rate, double damage_coefficient, double damage_resist);
-};
 
 class Enemy : public Entity {
-private:
+protected:
     double HP_;
     double max_HP_;
     double regeneration_rate_;
     double speed_;
     double damage_coefficient_;
     BuffCoefficients buffs_;
+    double count_of_steps_ = 0;
+
+    void tryAttackCastle();
+
 public:
-    Enemy(Position position, const MyString &name, EntityType type, double HP, double max_HP, double regeneration_rate,
+    Enemy(TowerDefense *tower_defense, Position position, const MyString &name, EntityType type, double HP,
+          double max_HP, double regeneration_rate,
           double speed,
           double damage_coefficient);
 
-    Enemy(int x, int y, const MyString &name, EntityType type, double HP, double max_HP, double regeneration_rate,
+    Enemy(TowerDefense *tower_defense, int x, int y, const MyString &name, EntityType type, double HP, double max_HP,
+          double regeneration_rate,
           double speed,
           double damage_coefficient);
 
-    Enemy(Position position, const MyString &name, EntityType type, double max_HP, double regeneration_rate,
+    Enemy(TowerDefense *tower_defense, Position position, const MyString &name, EntityType type, double max_HP,
+          double regeneration_rate,
           double speed,
           double damage_coefficient);
 
-    Enemy(int x, int y, const MyString &name, EntityType type, double max_HP, double regeneration_rate,
+    Enemy(TowerDefense *tower_defense, int x, int y, const MyString &name, EntityType type, double max_HP,
+          double regeneration_rate,
           double speed,
           double damage_coefficient);
 
@@ -87,6 +81,8 @@ public:
     virtual double getDamageResistBuff() const;
 
     virtual void resetBuffs();
+
+    void update() override;
 
 };
 
